@@ -25,6 +25,9 @@
 (define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
 
+;; Use shift up-down-left-right to move between windows
+(windmove-default-keybindings)
+
 ;; Set line spacing
 (setq-default line-spacing 0.35)
 (setq-default org-cycle-separator-line 3)
