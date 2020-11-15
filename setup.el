@@ -17,10 +17,6 @@
 ;; Show column position in file
 (column-number-mode 1)
 
-;; Set line spacing
-(setq line-spacing 0.55)
-(setq org-cycle-separator-line 3)
-
 ;; Setup keybindings for home and end
 (define-key global-map [home] 'beginning-of-line)
 (define-key global-map [end] 'end-of-line)
@@ -28,6 +24,10 @@
 ;; More keybindings
 (define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
+
+;; Set line spacing
+(setq-default line-spacing 0.35)
+(setq-default org-cycle-separator-line 3)
 
 ;; Delete trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -52,18 +52,14 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
+
 ;; ---------------------------------------
-
-
-;; ======================================
 ;; Setup Ivy (auto-complete framework)
 (use-package ivy
   :diminish
   :config
   (ivy-mode 1))
-
 ;; --------------------------------------
-;; ======================================
 ;; Setup Doom Mode Line. It's the bar at
 ;; the bottom of the screen that shows
 ;; line number and file etc.
@@ -71,12 +67,10 @@
   :ensure t
   :init (doom-modeline-mode 1)
 )
-
 ;; --------------------------------------
-;; ======================================
 ;; Set directory of backup and autosave
 ;; files to be /tmp
 (setq backup-directory-alist
-  `((".*" . ,temporary-file-directory)))
+      `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
-  `((".*" ,temporary-file-directory t)))
+      `((".*" ,temporary-file-directory t)))
