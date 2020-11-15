@@ -12,14 +12,25 @@
   (horizontal-scroll-bar-mode -1))
 
 ;; Set theme
-(load-theme 'monokai)
+(load-theme 'spacemacs-dark)
 
 ;; Show column position in file
 (column-number-mode 1)
 
+;; Set line spacing
+(setq line-spacing 0.55)
+(setq org-cycle-separator-line 3)
+
 ;; Setup keybindings for home and end
 (define-key global-map [home] 'beginning-of-line)
 (define-key global-map [end] 'end-of-line)
+
+;; More keybindings
+(define-key global-map (kbd "C-f") 'find-file)
+(define-key global-map (kbd "C-b") 'ivy-switch-buffer)
+
+;; Delete trailing whitespaces
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Setup key binding for full screen
 (define-key global-map (kbd "<s-return>") 'toggle-frame-fullscreen)
@@ -55,7 +66,7 @@
 ;; ======================================
 ;; Setup Doom Mode Line. It's the bar at
 ;; the bottom of the screen that shows
-;; line number and file etc. 
+;; line number and file etc.
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1)
