@@ -29,6 +29,9 @@
 (setq-default line-spacing 0.35)
 (setq-default org-cycle-separator-line 3)
 
+;; Line numbers in all prod-modes
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+
 ;; Delete trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -74,3 +77,4 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+;; -------------------------------------
