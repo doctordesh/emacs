@@ -41,6 +41,9 @@
 ;; Setup key binding for full screen
 (define-key global-map (kbd "<s-return>") 'toggle-frame-fullscreen)
 
+;; Make ESC quit prompts
+(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+
 ;; ========================================
 ;; Initialise package manager
 (require 'package)
@@ -50,6 +53,7 @@
 			 ("elpa" . "https://elpa.gnu.org/packages/")
 			 ("melpa-stable" . "https://stable.melpa.org/packages/")))
 
+(package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
 
@@ -72,7 +76,12 @@
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1)
+  :custom (
+	   (doom-modeline-height 40)
+  )
 )
+;; Hide modification icon
+(setq doom-modeline-buffer-modification-icon nil)
 ;; --------------------------------------
 ;; Set directory of backup and autosave
 ;; files to be /tmp

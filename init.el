@@ -15,8 +15,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-(package-initialize)
-
 ;; Load manually downloaded plugins
 (add-to-list 'load-path "~/.emacs.d/packages")
 
