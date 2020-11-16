@@ -44,7 +44,7 @@
 ;; Make ESC quit prompts
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
-;; ========================================
+;; -------------------------------------
 ;; Initialise package manager
 (require 'package)
 
@@ -63,12 +63,21 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
-;; ---------------------------------------
+;; --------------------------------------
+;; Setup Counsel
+(use-package counsel
+  :diminish counsel-mode
+  :init
+  (counsel-mode 1))
+
+;; --------------------------------------
 ;; Setup Ivy (auto-complete framework)
 (use-package ivy
   :diminish
+  :bind (("C-s" . swiper))
   :config
   (ivy-mode 1))
+
 ;; --------------------------------------
 ;; Setup Doom Mode Line. It's the bar at
 ;; the bottom of the screen that shows
@@ -77,11 +86,10 @@
   :ensure t
   :init (doom-modeline-mode 1)
   :custom (
-	   (doom-modeline-height 40)
-  )
-)
+	   (doom-modeline-height 40)))
 ;; Hide modification icon
 (setq doom-modeline-buffer-modification-icon nil)
+
 ;; --------------------------------------
 ;; Set directory of backup and autosave
 ;; files to be /tmp
@@ -89,4 +97,22 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+;; --------------------------------------
+;; Setup rainbow delimiters
+;; Colors partner delimiters in the same color
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
+
+;; --------------------------------------
+;; Which-key, helps with alternatives to key-bindings
+(use-package which-key
+  :init (which-key-mode)
+  :diminish which-key-mode
+  :config (setq which-key-idle-delay 0.3))
+
 ;; -------------------------------------
+;; ivy-rich supplies more information in ivy listings
+(use-package ivy-rich
+  :init
+  (ivy-rich-mode 1))
