@@ -116,3 +116,16 @@
 (use-package ivy-rich
   :init
   (ivy-rich-mode 1))
+
+
+;; -------------------------------------
+(use-package projectile
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :custom ((projectile-completion-system 'ivy))
+  :bind-keymap ("C-c p" . projectile-command-map)
+  :init
+  (when (file-directory-p "~/Development/kits-projects")
+    (setq projectile-project-search-path '("~/Development/kits-projects")))
+  (setq projecttile-switch-project-action #'projectile-dired)
+  )
