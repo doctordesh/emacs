@@ -125,7 +125,11 @@
   :custom ((projectile-completion-system 'ivy))
   :bind-keymap ("C-c p" . projectile-command-map)
   :init
-  (when (file-directory-p "~/Development/kits-projects")
-    (setq projectile-project-search-path '("~/Development/kits-projects")))
+  (when (file-directory-p "~/Development")
+    (setq projectile-project-search-path '("~/Development")))
   (setq projecttile-switch-project-action #'projectile-dired)
   )
+
+;; -------------------------------------
+;; Start emacs server deamon
+(server-start)
