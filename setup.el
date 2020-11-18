@@ -131,6 +131,10 @@
   )
 
 ;; -------------------------------------
+;; Magit (Maahhh git!)
+(use-package magit)
+
+;; -------------------------------------
 ;; Start emacs server deamon
 (server-start)
 
