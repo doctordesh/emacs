@@ -133,3 +133,7 @@
 ;; -------------------------------------
 ;; Start emacs server deamon
 (server-start)
+
+;; ------------------------------------
+;; Set emacs to max frame
+(toggle-frame-maximized)
