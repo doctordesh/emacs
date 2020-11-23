@@ -24,6 +24,7 @@
 ;; More keybindings
 (define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
+(define-key global-map (kbd "C-d") 'save-buffer)
 
 ;; Use shift up-down-left-right to move between windows
 (windmove-default-keybindings)
