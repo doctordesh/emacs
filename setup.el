@@ -121,16 +121,18 @@
 ;; -------------------------------------
 (use-package projectile
   :diminish projectile-mode
-  :config (projectile-mode)
+  :config
+  (projectile-mode)
+  (add-to-list 'projectile-globally-ignored-directories "*__pycache__")
+  (add-to-list 'projectile-globally-ignored-file-suffixes "pyc")
   :custom ((projectile-completion-system 'ivy))
   :bind-keymap ("C-c p" . projectile-command-map)
   :init
   (when (file-directory-p "~/Development")
     (setq projectile-project-search-path '("~/Development")))
   (setq projecttile-switch-project-action #'projectile-dired)
+  (setq projectile-indexing-method 'hybrid)
   )
-;; (add-to-list 'projectile-globally-ignored-directories "*__pycache__")
-;; (add-to-list 'projectile-globally-ignored-file-suffixes "pyc")
 
 ;; -------------------------------------
 ;; Magit (Maahhh git!)

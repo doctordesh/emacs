@@ -8,6 +8,9 @@
  '(line-spacing 0.35)
  '(package-selected-packages
    '(iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
+ '(projectile-globally-ignored-directories
+   '(".idea" ".vscode" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".ccls-cache" ".clangd" "__pycache__" "*__pycache__"))
+ '(projectile-indexing-method 'hybrid)
  '(scroll-error-top-bottom t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
