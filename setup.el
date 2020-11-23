@@ -129,8 +129,8 @@
     (setq projectile-project-search-path '("~/Development")))
   (setq projecttile-switch-project-action #'projectile-dired)
   )
-(add-to-list 'projectile-globally-ignored-directories "*__pycache__")
-(add-to-list 'projectile-globally-ignored-file-suffixes "pyc")
+;; (add-to-list 'projectile-globally-ignored-directories "*__pycache__")
+;; (add-to-list 'projectile-globally-ignored-file-suffixes "pyc")
 
 ;; -------------------------------------
 ;; Magit (Maahhh git!)
