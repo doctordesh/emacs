@@ -24,7 +24,7 @@
 ;; More keybindings
 (define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
-(define-key global-map (kbd "C-d") 'save-buffer)
+(define-key global-map (kbd "s-s") 'save-buffer)
 
 ;; Use shift up-down-left-right to move between windows
 (windmove-default-keybindings)
@@ -127,7 +127,8 @@
   (add-to-list 'projectile-globally-ignored-directories "*__pycache__")
   (add-to-list 'projectile-globally-ignored-file-suffixes "pyc")
   :custom ((projectile-completion-system 'ivy))
-  :bind-keymap ("C-c p" . projectile-command-map)
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
   :init
   (when (file-directory-p "~/Development")
     (setq projectile-project-search-path '("~/Development")))

@@ -20,6 +20,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; Remove default key bindings
+(load-file "~/.emacs.d/unbind.el")
+
 ;; Load manually downloaded plugins
 (add-to-list 'load-path "~/.emacs.d/packages")
 
