@@ -84,7 +84,6 @@
 ;; the bottom of the screen that shows
 ;; line number and file etc.
 (use-package doom-modeline
-  :ensure t
   :init (doom-modeline-mode 1)
   :custom (
 	   (doom-modeline-height 40)))
@@ -129,11 +128,13 @@
   :custom ((projectile-completion-system 'ivy))
   :bind-keymap
   ("C-c p" . projectile-command-map)
+  ("s-p" . projectile-command-map)
   :init
   (when (file-directory-p "~/Development")
     (setq projectile-project-search-path '("~/Development")))
   (setq projecttile-switch-project-action #'projectile-dired)
   (setq projectile-indexing-method 'hybrid)
+  (def
   )
 
 ;; -------------------------------------

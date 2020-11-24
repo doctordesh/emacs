@@ -11,4 +11,7 @@
 (global-unset-key (kbd "C-t")); transpose-chars
 (global-unset-key (kbd "C-z")); suspend-frame
 (global-unset-key (kbd "C-s")); search-forward
-(global-unset-key (kbd "C-r")); search-backward
+(global-unset-key (kbd "C-r")); search-backward,
+(global-unset-key (kbd "C-w")); kill-region (same as cmd-x) - cut
+(global-unset-key (kbd "M-w")); kill-ring-save (same as cmd-c) - copy
+(global-unset-key (kbd "C-y")); yank - paste
