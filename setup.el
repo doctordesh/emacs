@@ -147,3 +147,25 @@
 ;; ------------------------------------
 ;; Set emacs to max frame
 (toggle-frame-maximized)
+
+;; ------------------------------------
+;; Org-mode key-bindings
+(global-set-key (kbd "C-c f i")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.org/inbox.org")))
+
+(global-set-key (kbd "C-c f d")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.org/daily.org")))
+
+(global-set-key (kbd "C-c f t")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.org/todo.org")))
+
+(global-set-key (kbd "C-c f n")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.org/notes.org")))
