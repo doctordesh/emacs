@@ -132,7 +132,7 @@
   :init
   (when (file-directory-p "~/Development")
     (setq projectile-project-search-path '("~/Development")))
-  (setq projecttile-switch-project-action #'projectile-dired)
+  (setq projectile-switch-project-action 'projectile-dired)
   (setq projectile-indexing-method 'hybrid)
   )
 
