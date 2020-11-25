@@ -119,6 +119,7 @@
 
 
 ;; -------------------------------------
+;; Projectile - project management
 (use-package projectile
   :diminish projectile-mode
   :config
@@ -128,29 +129,36 @@
   :custom ((projectile-completion-system 'ivy))
   :bind-keymap
   ("C-c p" . projectile-command-map)
-  ("s-p" . projectile-command-map)
   :init
   (when (file-directory-p "~/Development")
     (setq projectile-project-search-path '("~/Development")))
   (setq projecttile-switch-project-action #'projectile-dired)
   (setq projectile-indexing-method 'hybrid)
-  (def
   )
+
+(define-key global-map (kbd "s-P") 'projectile-switch-project)
+(define-key global-map (kbd "s-p") 'projectile-find-file)
+
 
 ;; -------------------------------------
 ;; Magit (Maahhh git!)
 (use-package magit)
 
+
 ;; -------------------------------------
 ;; Start emacs server deamon
 (server-start)
+
 
 ;; ------------------------------------
 ;; Set emacs to max frame
 (toggle-frame-maximized)
 
+
 ;; ------------------------------------
-;; Org-mode key-bindings
+;; Bind keys to org mode files for esay
+;; note taking.
+;; i->inbox,d->daily,t->todo,n->notes
 (global-set-key (kbd "C-c f i")
 		(lambda ()
 		  (interactive)
