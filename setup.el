@@ -24,7 +24,7 @@
 ;; More keybindings
 (define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
-(define-key global-map (kbd "s-s") 'save-buffer)
+(define-key global-map (kbd "C-s") 'save-buffer)
 
 ;; Use shift up-down-left-right to move between windows
 (windmove-default-keybindings)
@@ -75,7 +75,7 @@
 ;; Setup Ivy (auto-complete framework)
 (use-package ivy
   :diminish
-  :bind (("C-s" . swiper))
+  :bind (("C-w" . swiper))
   :config
   (ivy-mode 1))
 
