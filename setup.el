@@ -156,9 +156,7 @@
 
 
 ;; ------------------------------------
-;; Bind keys to org mode files for esay
-;; note taking.
-;; i->inbox,d->daily,t->todo,n->notes
+;; Bind keys to files for easy access
 (global-set-key (kbd "C-c f i")
 		(lambda ()
 		  (interactive)
@@ -178,3 +176,8 @@
 		(lambda ()
 		  (interactive)
 		  (find-file "~/.org/notes.org")))
+
+(global-set-key (kbd "C-c f s")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.emacs.d/setup.el")))
