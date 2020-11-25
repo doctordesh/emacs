@@ -12,7 +12,8 @@
  '(projectile-globally-ignored-directories
    '(".idea" ".vscode" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".ccls-cache" ".clangd" "__pycache__" "*__pycache__"))
  '(projectile-indexing-method 'hybrid)
- '(scroll-error-top-bottom t))
+ '(scroll-error-top-bottom t)
+ '(spacemacs-theme-custom-colors nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
