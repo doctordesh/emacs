@@ -26,8 +26,8 @@
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
 (define-key global-map (kbd "C-s") 'save-buffer)
 
-;; Use shift up-down-left-right to move between windows
-(windmove-default-keybindings)
+;; Use cmd up-down-left-right to move between windows
+(windmove-default-keybindings 'super)
 
 ;; Set line spacing
 (setq-default line-spacing 0.35)
