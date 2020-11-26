@@ -7,3 +7,8 @@
   "Backup org and emacs files"
   (interactive)
   (shell-command "sh ~/bin/backup.sh"))
+
+(defun er/backup ()
+  "alskdjf"
+  (interactive)
+  (start-process-shell-command "backup" nil "sh ~/bin/backup.sh"))
