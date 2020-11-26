@@ -11,4 +11,4 @@
 (defun er/backup ()
   "alskdjf"
   (interactive)
-  (start-process-shell-command "backup" "*scratch*" "sh ~/bin/backup.sh"))
+  (start-process-shell-command "backup" "*Messages*" "sh ~/bin/backup.sh"))
