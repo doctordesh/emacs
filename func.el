@@ -1,4 +1,4 @@
-(defun cudate ()
- "Nonce function"
+(defun er/cudate ()
+ "Prints todays date and time in ER format"
  (interactive)
- (message "Howdie-doodie fella"))
+ (insert (format-time-string "%a, %Y-%m-%d: %H:")))
