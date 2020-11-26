@@ -38,3 +38,6 @@
 
 ;; Load custom functions
 (load-file "~/.emacs.d/func.el")
+
+;; Open the daily.org file
+(find-file "~/.org/daily.org")
