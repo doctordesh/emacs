@@ -177,6 +177,11 @@
 		  (interactive)
 		  (find-file "~/.org/notes.org")))
 
+(global-set-key (kbd "C-c f m")
+		(lambda ()
+		  (interactive)
+		  (find-file "~/.org/meetings.org")))
+
 (global-set-key (kbd "C-c f s")
 		(lambda ()
 		  (interactive)
