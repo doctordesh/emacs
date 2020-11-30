@@ -157,32 +157,39 @@
 
 ;; ------------------------------------
 ;; Bind keys to files for easy access
-(global-set-key (kbd "C-c f i")
-		(lambda ()
-		  (interactive)
-		  (find-file "~/.org/inbox.org")))
+(defun er/open-inbox ()
+    "Open inbox"
+    (interactive)
+    (find-file "~/.org/inbox.org"))
 
-(global-set-key (kbd "C-c f d")
-		(lambda ()
-		  (interactive)
-		  (find-file "~/.org/daily.org")))
+(defun er/open-daily ()
+    "Open daily"
+    (interactive)
+    (find-file "~/.org/daily.org"))
 
-(global-set-key (kbd "C-c f t")
-		(lambda ()
-		  (interactive)
-		  (find-file "~/.org/todo.org")))
+(defun er/open-todo ()
+    "Open todo"
+    (interactive)
+    (find-file "~/.org/todo.org"))
 
-(global-set-key (kbd "C-c f n")
-		(lambda ()
-		  (interactive)
-		  (find-file "~/.org/notes.org")))
+(defun er/open-notes ()
+    "Open notes"
+    (interactive)
+    (find-file "~/.org/notes.org"))
 
-(global-set-key (kbd "C-c f m")
-		(lambda ()
-		  (interactive)
-		  (find-file "~/.org/meetings.org")))
+(defun er/open-meetings ()
+    "Open meetings"
+    (interactive)
+    (find-file "~/.org/meetings.org"))
 
-(global-set-key (kbd "C-c f s")
-		(lambda ()
-		  (interactive)
-		  (find-file "~/.emacs.d/setup.el")))
+(defun er/open-setup ()
+    "Open setup"
+    (interactive)
+    (find-file "~/.emacs.d/setup.el"))
+
+(global-set-key (kbd "C-c f i") 'er/open-inbox)
+(global-set-key (kbd "C-c f d") 'er/open-daily)
+(global-set-key (kbd "C-c f t") 'er/open-todo)
+(global-set-key (kbd "C-c f n") 'er/open-notes)
+(global-set-key (kbd "C-c f m") 'er/open-meetings)
+(global-set-key (kbd "C-c f s") 'er/open-setup)
