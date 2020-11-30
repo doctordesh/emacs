@@ -156,6 +156,15 @@
 
 
 ;; ------------------------------------
+;; Set PYTHONPATH inside emacs
+(defun er/pythonpath ()
+  "Reads environment PYTHONPATH into emacs"
+  (interactive)
+  (setenv "PYTHONPATH" (shell-command-to-string "echo $PYTHONPATH")))
+(er/pythonpath)
+
+
+;; ------------------------------------
 ;; Bind keys to files for easy access
 (defun er/open-inbox ()
     "Open inbox"
