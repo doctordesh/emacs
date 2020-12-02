@@ -25,6 +25,8 @@
 (define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
 (define-key global-map (kbd "C-s") 'save-buffer)
+(define-key global-map (kbd "C-r") 'query-replace)
+(define-key global-map (kbd "C-R") 'query-replace-regexp)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
