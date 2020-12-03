@@ -30,9 +30,6 @@
 ;; Load main configuration file
 (load-file "~/.emacs.d/setup.el")
 
-;; Load main configuration for org-mode
-(load-file "~/.emacs.d/org.el")
-
 ;; Load file extension modes
 (load-file "~/.emacs.d/file-modes.el")
 

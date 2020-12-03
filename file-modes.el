@@ -1,6 +1,21 @@
+;; --------------------------------------
+;; Org-mode
+
+;; Nice looking bullets
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+;; Indents contents below a header to match header level
+(add-hook 'org-mode-hook (lambda () (org-indent-mode 1)))
+
+
+;; --------------------------------------
+;; YAML
+
 ;; Use yaml-mode when running *.yml files
 (use-package yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
 
 ;; --------------------------------------
 ;; Golang
