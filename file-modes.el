@@ -12,13 +12,16 @@
 ;; --------------------------------------
 ;; YAML
 
-;; Use yaml-mode when running *.yml files
 (use-package yaml-mode)
+
+;; Use yaml-mode when running *.yml files
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
 
 ;; --------------------------------------
 ;; Golang
+
+(use-package go-mode)
 
 ;; Setup PATH variable
 (defun set-exec-path-from-shell-PATH ()
@@ -44,3 +47,22 @@
   (local-set-key (kbd "C-,") 'pop-tag-mark)
   )
 (add-hook 'go-mode-hook 'custom-go-mode-hook)
+
+;; --------------------------------------
+;; Docker
+(use-package dockerfile-mode)
+
+;; --------------------------------------
+;; Markdown
+(use-package markdown-mode)
+
+
+;; --------------------------------------
+;; Python
+
+;; Regular python-mode is build-in
+
+(use-package conda)
+
+;; Set PYTHONPATH inside emacs
+(setenv "PYTHONPATH" (shell-command-to-string "echo $PYTHONPATH"))

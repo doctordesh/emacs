@@ -18,6 +18,10 @@
 (setq use-package-always-ensure t)
 
 ;; -------------------------------------
+;; Package installs
+(use-package exec-path-from-shell) ; A GNU Emacs library to ensure environment variables inside Emacs look the same as in the user's shell.
+
+;; -------------------------------------
 ;; Basic config
 (setq inhibit-startup-message t)
 
@@ -79,12 +83,6 @@
   :config
   (ivy-mode 1))
 
-;; -------------------------------------
-;; ivy-rich supplies more information in ivy listings
-(use-package ivy-rich
-  :init
-  (ivy-rich-mode 1))
-
 ;; --------------------------------------
 ;; Setup Counsel (Ivy-enhanced versions
 ;; of common Emacs commands)
@@ -92,6 +90,12 @@
   :diminish counsel-mode
   :init
   (counsel-mode 1))
+
+;; -------------------------------------
+;; ivy-rich supplies more information in ivy listings
+(use-package ivy-rich
+  :init
+  (ivy-rich-mode 1))
 
 ;; --------------------------------------
 ;; Setup Doom Mode Line. It's the bar at
@@ -161,15 +165,6 @@
 ;; --------------------------------------
 ;; Set emacs to max frame
 (toggle-frame-maximized)
-
-
-;; --------------------------------------
-;; Set PYTHONPATH inside emacs
-(defun er/pythonpath ()
-  "Reads environment PYTHONPATH into emacs"
-  (interactive)
-  (setenv "PYTHONPATH" (shell-command-to-string "echo $PYTHONPATH")))
-(er/pythonpath)
 
 
 ;; --------------------------------------
