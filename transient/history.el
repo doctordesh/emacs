@@ -3,4 +3,7 @@
  (magit-dispatch nil)
  (magit-log
   ("-n256" "--graph" "--decorate"))
- (magit-push nil))
+ (magit-pull nil)
+ (magit-push nil)
+ (magit-revert
+  ("--edit")))
