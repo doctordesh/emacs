@@ -1,0 +1,9 @@
+pwd
+dev
+source ~/.zshrc
+dev
+alias dev="ls"
+dev
+ls
+;lkjsdfWelcome to the Emacs shell
+ls -lah

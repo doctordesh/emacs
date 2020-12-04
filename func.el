@@ -9,13 +9,16 @@
   (start-process-shell-command "backup" "*Messages*" "sh ~/bin/backup.sh"))
 
 
-(setq projects_dir "~/Development")
-(defun er/clone (repo),,
+(defun er/clone (repo)
   "Clone repo from KITS SW Gitlab and put it in the right place"
   (interactive "sWhich repo? (gitlab.maxiv.lu.se/kits-maxiv/ ")
   (setq repo-url (format "git@gitlab.maxiv.lu.se:kits-maxiv/%s" repo))
-  (setq download-dir (expand-file-name (format "%s/%s" projects_dir repo))
+  (setq download-dir (expand-file-name (format "~/Development/%s" repo)))
+  (setq command (format "git clone %s %s" repo-url download-dir))
+  (setq buffer (generate-new-buffer (format "*clone %s*" repo-url)))
   (message "Repo: %s" repo-url)
-  (message project_dir)
   (message download-dir)
+  (switch-to-buffer buffer)
+  (start-process-shell-command "clone" buffer command)
+  (projectile-switch-project)
   )
