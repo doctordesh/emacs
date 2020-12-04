@@ -7,11 +7,12 @@
  '(custom-safe-themes
    '("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "8b58ef2d23b6d164988a607ee153fd2fa35ee33efc394281b1028c2797ddeebb" default))
  '(line-spacing 0.35)
+ '(org-hide-emphasis-markers t)
  '(package-selected-packages
    '(which-key rainbow-delimiters counsel ivy-rich neotree iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
  '(projectile-globally-ignored-directories
    '(".idea" ".vscode" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".ccls-cache" ".clangd" "__pycache__" "*__pycache__"))
- '(projectile-indexing-method 'hybrid t)
+ '(projectile-indexing-method 'hybrid)
  '(scroll-error-top-bottom t)
  '(spacemacs-theme-custom-colors nil))
 (custom-set-faces
