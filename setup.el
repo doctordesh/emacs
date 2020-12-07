@@ -71,6 +71,7 @@
 (define-key global-map (kbd "C-s") 'save-buffer)
 (define-key global-map (kbd "C-r") 'query-replace)
 (define-key global-map (kbd "C-R") 'query-replace-regexp)
+(define-key global-map (kbd "C-x K") 'ibuffer)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
