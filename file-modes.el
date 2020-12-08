@@ -12,6 +12,13 @@
 ;; and underscore emphaisis
 (setq org-hide-emphasis-markers 1)
 
+;; Capture template
+(setq org-capture-templates
+      '(("t" "Todo" entry (file+headline "~/.org/inbox.org" "Inbox")
+         "* TODO %?\n:LOGBOOK:\n- Added at %U\n:END: ")))
+
+(define-key global-map (kbd "C-c c") 'org-capture)
+
 
 ;; --------------------------------------
 ;; YAML
