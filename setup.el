@@ -65,7 +65,8 @@
 (define-key global-map [home] 'beginning-of-line)
 (define-key global-map [end] 'end-of-line)
 
-;; More keybinding(define-key global-map (kbd "C-f") 'find-file)
+;; More keybinding
+(define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
 (define-key global-map (kbd "C-S-b") 'projectile-switch-to-buffer)
 (define-key global-map (kbd "C-s") 'save-buffer)

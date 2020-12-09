@@ -4,7 +4,7 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
  (filename . "~/.org/inbox.org")
- (front-context-string . "** TODO RIXS exp")
- (rear-context-string . "ed 14:45]\n:END:\n")
- (position . 5900))
+ (front-context-string . "** TODO Build sc")
+ (rear-context-string . "ed 16:16]\n:END:\n")
+ (position . 6083))
 )

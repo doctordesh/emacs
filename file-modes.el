@@ -19,6 +19,17 @@
 
 (define-key global-map (kbd "C-c c") 'org-capture)
 
+;; Faces
+(setq org-todo-keyword-faces
+      '(
+	("PROJECT" . (:background "#292B2E" :foreground: "blue" :weight "bold"))
+	("NEXT" . (:background "#292B2E" :foreground "orange"))
+	("TODO" . (:background "#292B2E" :foreground "orange"))
+	("IN-PROGRESS" . (:background "#292B2E" :foreground "blue"))
+	("WAITING" . (:background "#292B2E" :foreground "orange"))
+	("DONE" . (:background "#292B2E" :foreground "green"))
+	("REJECTED" . (:background "#292B2E" :foreground "red"))
+	))
 
 ;; --------------------------------------
 ;; YAML
