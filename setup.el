@@ -67,6 +67,7 @@
 
 ;; More keybinding(define-key global-map (kbd "C-f") 'find-file)
 (define-key global-map (kbd "C-b") 'ivy-switch-buffer)
+(define-key global-map (kbd "C-B") 'projectile-switch-to-buffer)
 (define-key global-map (kbd "C-s") 'save-buffer)
 (define-key global-map (kbd "C-r") 'query-replace)
 (define-key global-map (kbd "C-R") 'query-replace-regexp)
