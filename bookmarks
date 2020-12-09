@@ -3,8 +3,8 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/org/gtd.org")
- (front-context-string . "** TODO lorem ip")
- (rear-context-string)
- (position . 9))
+ (filename . "~/.org/inbox.org")
+ (front-context-string . "** TODO RIXS exp")
+ (rear-context-string . "ed 14:45]\n:END:\n")
+ (position . 5900))
 )

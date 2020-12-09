@@ -7,4 +7,5 @@
  (magit-pull nil)
  (magit-push nil)
  (magit-revert
-  ("--edit")))
+  ("--edit"))
+ (magit-show-refs nil))
