@@ -1,4 +1,9 @@
 ;; --------------------------------------
+;; Dockerfile mode
+;; Adds a custom file extension
+(add-to-list 'auto-mode-alist '("\\.docker\\'" . dockerfile-mode))
+
+;; --------------------------------------
 ;; Org-mode
 
 ;; Nice looking bullets
