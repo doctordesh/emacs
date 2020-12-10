@@ -14,8 +14,12 @@
 
 ;; Capture template
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/.org/inbox.org" "Inbox")
-         "* TODO %?\n:LOGBOOK:\n- Added at %U\n:END: ")))
+      '(
+	("t" "Todo" entry (file "~/.org/inbox.org")
+         "* TODO %?\n:LOGBOOK:\n- Added at %U\n:END: ")
+	("T" "Task" entry (file "~/.org/inbox.org")
+	 "* TODO %?\nhttps://agile.maxiv.lu.se/project/vinhar-max-iv-machine-cs/us/%?\n:LOGBOOK:\n- Added at %U\n:END: ")
+	))
 
 (define-key global-map (kbd "C-c c") 'org-capture)
 
@@ -29,6 +33,7 @@
 	("NEXT"        . (:background "#292B2E" :foreground "#FA9746" :weight bold))
 	("TODO"        . (:background "#292B2E" :foreground "#FA9746" :weight bold))
 	("IN-PROGRESS" . (:background "#292B2E" :foreground "#259FA1" :weight bold))
+	("ON-HOLD"     . (:background "#292B2E" :foreground "#C77150" :weight bold))
 	("WAITING"     . (:background "#292B2E" :foreground "#C77150" :weight bold))
 	("DONE"        . (:background "#292B2E" :foreground "#17BA0F" :weight bold))
 	("REJECTED"    . (:background "#292B2E" :foreground "#C94D1C" :weight bold))
