@@ -58,6 +58,13 @@
 ;; Make ESC quit prompts
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
+;; Show time
+(display-time-mode 1)
+(setq display-time-24hr-format 1)
+
+;; Don't as yes or no, but y or n
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; -------------------------------------
 ;; Personal key bindings
 
@@ -73,6 +80,8 @@
 (define-key global-map (kbd "C-r") 'query-replace)
 (define-key global-map (kbd "C-R") 'query-replace-regexp)
 (define-key global-map (kbd "C-x K") 'ibuffer)
+(define-key global-map (kbd "s-d") 'split-window-right)
+(define-key global-map (kbd "s-S-d") 'split-window-below)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
