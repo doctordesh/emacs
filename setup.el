@@ -83,6 +83,7 @@
 (define-key global-map (kbd "s-d") 'split-window-right)
 (define-key global-map (kbd "s-D") 'split-window-below)
 (define-key global-map (kbd "s-w") 'delete-window)
+(define-key global-map (kbd "s-W") 'delete-other-windows)
 (define-key global-map (kbd "C-d") 'dired-other-window)
 
 ;; Use cmd up-down-left-right to move between windows
