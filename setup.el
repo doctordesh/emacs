@@ -81,7 +81,9 @@
 (define-key global-map (kbd "C-R") 'query-replace-regexp)
 (define-key global-map (kbd "C-x K") 'ibuffer)
 (define-key global-map (kbd "s-d") 'split-window-right)
-(define-key global-map (kbd "s-S-d") 'split-window-below)
+(define-key global-map (kbd "s-D") 'split-window-below)
+(define-key global-map (kbd "s-w") 'delete-window)
+(define-key global-map (kbd "C-d") 'dired-other-window)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
