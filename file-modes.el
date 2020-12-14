@@ -45,7 +45,7 @@
 	))
 
 ;; Refile targets
-(setq org-reverse-note-order 1)
+(setq org-reverse-note-order t)
 (setq org-refile-use-outline-path 'file)
 (setq org-refile-targets '(
 			   ("~/.org/todo.org" :level . 0)
