@@ -9,7 +9,7 @@
  (position . 15156))
 ("org-capture-last-stored"
  (filename . "~/.org/inbox.org")
- (front-context-string . "* TODO Add Balde")
- (rear-context-string . "ri 09:33]\n:END:\n")
- (position . 5925))
+ (front-context-string . "* TODO Create an")
+ (rear-context-string . "ri 14:04]\n:END:\n")
+ (position . 6019))
 )
