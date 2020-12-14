@@ -85,6 +85,8 @@
 (define-key global-map (kbd "s-w") 'delete-window)
 (define-key global-map (kbd "s-W") 'delete-other-windows)
 (define-key global-map (kbd "C-d") 'dired-other-window)
+(define-key global-map (kbd "C-c l") 'org-store-link)
+(define-key global-map (kbd "C-c L") 'org-insert-last-stored-link)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
