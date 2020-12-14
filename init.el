@@ -9,6 +9,7 @@
  '(display-time-24hr-format nil)
  '(line-spacing 0.35)
  '(org-hide-emphasis-markers t)
+ '(org-refile-targets '(("~/.org/todo.org" :level . 0)))
  '(package-selected-packages
    '(which-key rainbow-delimiters counsel ivy-rich neotree iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
  '(projectile-globally-ignored-directories

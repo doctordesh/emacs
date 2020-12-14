@@ -44,6 +44,14 @@
 	("REJECTED"    . (:background "#292B2E" :foreground "#C94D1C" :weight bold))
 	))
 
+;; Refile targets
+(setq org-reverse-note-order 1)
+(setq org-refile-use-outline-path 'file)
+(setq org-refile-targets '(
+			   ("~/.org/todo.org" :level . 0)
+			   ("~/.org/archive.org" :level . 0)
+			   ))
+
 ;; --------------------------------------
 ;; YAML
 
