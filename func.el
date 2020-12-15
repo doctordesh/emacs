@@ -1,3 +1,7 @@
+;; --------------------------------------------------
+;; Custom functions
+;; --------------------------------------------------
+
 (defun er/date ()
  "Prints todays date and time in ER format"
  (interactive)

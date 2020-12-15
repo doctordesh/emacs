@@ -221,3 +221,13 @@
 (global-set-key (kbd "C-c f n") 'er/open-notes)
 (global-set-key (kbd "C-c f m") 'er/open-meetings)
 (global-set-key (kbd "C-c f s") 'er/open-setup)
+
+
+;; -------------------------------------
+;; elfeed
+
+(use-package elfeed)
+(setq elfeed-feeds
+      '(
+	("https://www.joelonsoftware.com/rss" software)
+	))
