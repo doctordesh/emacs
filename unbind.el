@@ -15,3 +15,4 @@
 (global-unset-key (kbd "C-w")); kill-region (same as cmd-x) - cut
 (global-unset-key (kbd "M-w")); kill-ring-save (same as cmd-c) - copy
 (global-unset-key (kbd "C-x C-c")); exit emacs (use cmd-q instead)
+(global-unset-key (kbd "s-s")); save (on macOS)
