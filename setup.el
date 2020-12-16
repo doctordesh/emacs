@@ -211,6 +211,11 @@
     (interactive)
     (find-file "~/.org/meetings.org"))
 
+(defun er/open-someday ()
+    "Open meetings"
+    (interactive)
+    (find-file "~/.org/someday.org"))
+
 (defun er/open-setup ()
     "Open setup"
     (interactive)
@@ -221,6 +226,7 @@
 (global-set-key (kbd "C-c f t") 'er/open-todo)
 (global-set-key (kbd "C-c f n") 'er/open-notes)
 (global-set-key (kbd "C-c f m") 'er/open-meetings)
+(global-set-key (kbd "C-c f y") 'er/open-someday)
 (global-set-key (kbd "C-c f s") 'er/open-setup)
 
 

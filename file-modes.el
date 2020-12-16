@@ -50,6 +50,7 @@
 (setq org-refile-targets '(
 			   ("~/.org/todo.org" :level . 0)
 			   ("~/.org/archive.org" :level . 0)
+			   ("~/.org/someday.org" :level . 0)
 			   ))
 
 ;; --------------------------------------
