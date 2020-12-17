@@ -2,11 +2,6 @@
 ;; Custom functions
 ;; --------------------------------------------------
 
-(defun er/date ()
- "Prints todays date and time in ER format"
- (interactive)
- (insert (format-time-string "%a, %Y-%m-%d: %H:")))
-
 (defun er/backup ()
   "Backup org and emacs files"
   (interactive)
@@ -26,3 +21,25 @@
   (start-process-shell-command "clone" buffer command)
   (projectile-switch-project)
   )
+
+(defun el/day ()
+    "Insert the daily template"
+    (interactive)
+    (insert (concat
+	     "** "
+	     (format-time-string "%a, %Y-%m-%d: %H:")
+	     "\n"
+	     "*** Meta [0/3]\n"
+	     " - [ ] Read mail and create inbox items for each thing\n"
+	     " - [ ] Plan the day. Look up what should be done according to previous\n"
+	     "lists and add things to the 'Task' header\n"
+	     " - [ ] Write down achievements of the day\n"
+             "*** Tasks [%]\n"
+             "Add tasks here about what should be done today. Add links to todos etc\n"
+             " - [ ] ...\n"
+             "**** Unplanned\n"
+             "*** Achievements\n"
+             "Add a comment at the end of the day about what was achieved, good and bad.\n"
+             "Or insights, or thoughts, or something else\n"
+	     ))
+    )
