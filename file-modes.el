@@ -23,7 +23,7 @@
 	("t" "Todo" entry (file "~/.org/inbox.org")
          "* TODO %?\n:LOGBOOK:\n- Added at %U\n:END: ")
 	("T" "Task" entry (file "~/.org/inbox.org")
-	 "* TODO %?\nhttps://agile.maxiv.lu.se/project/vinhar-max-iv-machine-cs/us/%d\n:LOGBOOK:\n- Added at %U\n:END: ")
+	 "* TODO %?\nhttps://agile.maxiv.lu.se/project/vinhar-max-iv-machine-cs/us/%^{TaskID}\n:LOGBOOK:\n- Added at %U\n:END:")
 	))
 
 (define-key global-map (kbd "C-c c") 'org-capture)
