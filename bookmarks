@@ -4,12 +4,12 @@
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-refile-last-stored"
  (filename . "~/.org/todo.org")
- (front-context-string . "* TODO Vad delkj")
+ (front-context-string . "* TODO Review El")
  (rear-context-string . "\n#+TITLE: Todo\n\n")
  (position . 110))
 ("org-capture-last-stored"
  (filename . "~/.org/inbox.org")
- (front-context-string . "* TODO lskjdf\nht")
- (rear-context-string . "hu 08:43]\n:END:\n")
- (position . 6867))
+ (front-context-string . "* TODO Review El")
+ (rear-context-string . "ri 11:37]\n:END:\n")
+ (position . 7531))
 )
