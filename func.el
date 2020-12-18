@@ -22,7 +22,7 @@
   (projectile-switch-project)
   )
 
-(defun el/day ()
+(defun er/day ()
     "Insert the daily template"
     (interactive)
     (insert (concat
