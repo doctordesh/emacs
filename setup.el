@@ -238,4 +238,5 @@
 (setq elfeed-feeds
       '(
 	("https://www.joelonsoftware.com/rss" software)
+	("http://feeds.feedburner.com/typepad/krisdedecker/lowtechmagazineenglish" tech)
 	))
