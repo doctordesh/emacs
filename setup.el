@@ -88,7 +88,7 @@
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c L") 'org-insert-last-stored-link)
-(define-key global-map (kbd "C-c t") 'other-frame)
+(define-key global-map (kbd "C-q") 'other-frame)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
