@@ -90,7 +90,7 @@
   (local-set-key (kbd "C-.") 'godef-jump)
   (local-set-key (kbd "C-,") 'pop-tag-mark)
   )
-(add-hook 'go-mode-hook 'custom-go-mode-hook)
+;; (add-hook 'go-mode-hook 'custom-go-mode-hook) ;; is this needed with lsp-mode?
 
 ;; --------------------------------------
 ;; Docker
