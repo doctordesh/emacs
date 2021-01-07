@@ -80,7 +80,7 @@
 (when window-system (set-exec-path-from-shell-PATH))
 
 ;; Set my path as gopath
-(setenv "GOPATH" "/Users/emil/Development/go")
+;; (setenv "GOPATH" "/Users/emil/Development/go")
 
 ;; Gofmt before save
 (defun custom-go-mode-hook ()
