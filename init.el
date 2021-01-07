@@ -40,5 +40,7 @@
 ;; Load custom functions
 (load-file "~/.emacs.d/func.el")
 
-;; Open the daily.org file
+;; Open the daily.org and todo.org file
 (find-file "~/.org/daily.org")
+(find-file-other-window "~/.org/todo.org")
+(other-window 1) ; focus 'daily'
