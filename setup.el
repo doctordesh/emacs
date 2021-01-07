@@ -52,9 +52,6 @@
 ;; Delete trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-;; Setup key binding for full screen
-(define-key global-map (kbd "<s-return>") 'toggle-frame-fullscreen)
-
 ;; Make ESC quit prompts
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
@@ -65,33 +62,6 @@
 
 ;; Don't as yes or no, but y or n
 (fset 'yes-or-no-p 'y-or-n-p)
-
-;; -------------------------------------
-;; Personal key bindings
-
-;; Setup keybindings for home and end
-(define-key global-map [home] 'beginning-of-line)
-(define-key global-map [end] 'end-of-line)
-
-;; More keybinding
-(define-key global-map (kbd "C-f") 'find-file)
-(define-key global-map (kbd "C-b") 'ivy-switch-buffer)
-(define-key global-map (kbd "C-S-b") 'projectile-switch-to-buffer)
-(define-key global-map (kbd "C-s") 'save-buffer)
-(define-key global-map (kbd "C-r") 'query-replace)
-(define-key global-map (kbd "C-R") 'query-replace-regexp)
-(define-key global-map (kbd "C-x K") 'ibuffer)
-(define-key global-map (kbd "s-d") 'split-window-right)
-(define-key global-map (kbd "s-D") 'split-window-below)
-(define-key global-map (kbd "s-w") 'delete-window)
-(define-key global-map (kbd "s-W") 'delete-other-windows)
-(define-key global-map (kbd "C-d") 'dired-other-window)
-(define-key global-map (kbd "C-c l") 'org-store-link)
-(define-key global-map (kbd "C-c L") 'org-insert-last-stored-link)
-(define-key global-map (kbd "C-q") 'other-frame)
-
-;; Use cmd up-down-left-right to move between windows
-(windmove-default-keybindings 'super)
 
 ;; --------------------------------------
 ;; Setup Ivy (auto-complete framework)
@@ -166,9 +136,6 @@
   (setq projectile-indexing-method 'hybrid)
   )
 
-(define-key global-map (kbd "s-P") 'projectile-switch-project)
-(define-key global-map (kbd "s-p") 'projectile-find-file)
-
 
 ;; --------------------------------------
 ;; Magit (Maahhh git!)
@@ -178,11 +145,6 @@
 ;; --------------------------------------
 ;; Start emacs server deamon
 (server-start)
-
-
-;; --------------------------------------
-;; Set emacs to max frame
-(toggle-frame-maximized)
 
 
 ;; --------------------------------------
@@ -240,3 +202,43 @@
 	("https://www.joelonsoftware.com/rss" software)
 	("http://feeds.feedburner.com/typepad/krisdedecker/lowtechmagazineenglish" tech)
 	))
+
+
+;; -------------------------------------
+;; Personal key bindings
+
+;; Setup key binding for full screen
+(define-key global-map (kbd "<s-return>") 'toggle-frame-fullscreen)
+
+;; Setup keybindings for home and end
+(define-key global-map [home] 'beginning-of-line)
+(define-key global-map [end] 'end-of-line)
+
+;; More keybinding
+(define-key global-map (kbd "C-f") 'find-file)
+(define-key global-map (kbd "C-S-f") 'projectile-find-file)
+(define-key global-map (kbd "C-b") 'ivy-switch-buffer)
+(define-key global-map (kbd "C-S-b") 'projectile-switch-to-buffer)
+(define-key global-map (kbd "C-s") 'save-buffer)
+(define-key global-map (kbd "C-r") 'query-replace)
+(define-key global-map (kbd "C-R") 'query-replace-regexp)
+(define-key global-map (kbd "C-x K") 'ibuffer)
+(define-key global-map (kbd "s-d") 'split-window-right)
+(define-key global-map (kbd "s-D") 'split-window-below)
+(define-key global-map (kbd "s-w") 'delete-window)
+(define-key global-map (kbd "s-W") 'delete-other-windows)
+(define-key global-map (kbd "C-d") 'dired-other-window)
+(define-key global-map (kbd "C-c l") 'org-store-link)
+(define-key global-map (kbd "C-c L") 'org-insert-last-stored-link)
+(define-key global-map (kbd "C-q") 'other-frame)
+
+(define-key global-map (kbd "s-P") 'projectile-switch-project)
+(define-key global-map (kbd "s-p") 'projectile-find-file)
+
+;; Use cmd up-down-left-right to move between windows
+(windmove-default-keybindings 'super)
+
+
+;; --------------------------------------
+;; Set emacs to max frame
+(toggle-frame-fullscreen)
