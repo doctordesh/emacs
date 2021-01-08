@@ -17,9 +17,11 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+
 ;; -------------------------------------
 ;; Package installs
 (use-package exec-path-from-shell) ; A GNU Emacs library to ensure environment variables inside Emacs look the same as in the user's shell.
+
 
 ;; -------------------------------------
 ;; Basic config
@@ -60,7 +62,7 @@
 (setq display-time-24hr-format 1)
 (setq display-time-default-load-average nil)
 
-;; Don't as yes or no, but y or n
+;; Don't ask yes or no, but y or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; --------------------------------------
@@ -79,11 +81,13 @@
   :init
   (counsel-mode 1))
 
+
 ;; -------------------------------------
 ;; ivy-rich supplies more information in ivy listings
 (use-package ivy-rich
   :init
   (ivy-rich-mode 1))
+
 
 ;; --------------------------------------
 ;; Setup Doom Mode Line. It's the bar at
@@ -97,6 +101,7 @@
 ;; Hide modification icon
 (setq doom-modeline-buffer-modification-icon nil)
 
+
 ;; --------------------------------------
 ;; Set directory of backup and autosave
 ;; files to be /tmp
@@ -105,11 +110,13 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+
 ;; --------------------------------------
 ;; Setup rainbow delimiters
 ;; Colors partner delimiters in the same color
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
+
 
 ;; --------------------------------------
 ;; Which-key, helps with alternatives to key-bindings
@@ -117,6 +124,7 @@
   :init (which-key-mode)
   :diminish which-key-mode
   :config (setq which-key-idle-delay 0.3))
+
 
 ;; -------------------------------------
 ;; Projectile - project management tool
@@ -194,7 +202,7 @@
 
 
 ;; -------------------------------------
-;; elfeed
+;; elfeed (RSS reader)
 
 (use-package elfeed)
 (setq elfeed-feeds
