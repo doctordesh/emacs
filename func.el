@@ -5,7 +5,7 @@
 (defun er/backup ()
   "Backup org and emacs files"
   (interactive)
-  (start-process-shell-command "backup" "*Messages*" "sh ~/bin/backup.sh"))
+  (start-process-shell-command "backup" "*Messages*" "sh ~/.emacs.d/backup.sh"))
 
 
 (defun er/clone (repo)
