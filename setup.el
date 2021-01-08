@@ -238,7 +238,6 @@
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
 
-
 ;; --------------------------------------
-;; Set emacs to max frame
-(toggle-frame-fullscreen)
+;; Setup ksync save hook
+(add-hook 'after-save-hook 'er/ksync)

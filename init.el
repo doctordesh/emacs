@@ -31,16 +31,22 @@
 ;; Load manually downloaded plugins
 (add-to-list 'load-path "~/.emacs.d/packages")
 
+;; Load custom functions
+(load-file "~/.emacs.d/func.el")
+
 ;; Load main configuration file
 (load-file "~/.emacs.d/setup.el")
 
 ;; Load file extension modes
 (load-file "~/.emacs.d/file-modes.el")
 
-;; Load custom functions
-(load-file "~/.emacs.d/func.el")
+;; --------------------------------------------------
+;; Setup done, prep for usage
+
+;; Set emacs to full screen
+(toggle-frame-fullscreen)
 
 ;; Open the daily.org and todo.org file
 (find-file "~/.org/daily.org")
 (find-file-other-window "~/.org/todo.org")
-(other-window 1) ; focus 'daily'
+(other-window 1) ; prev line focuses new buffer, so move back
