@@ -55,7 +55,7 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Make ESC quit prompts
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(global-set-key (kbd "<escape>") 'keyboard-quit)
 
 ;; Show time
 (display-time-mode 1)
@@ -209,6 +209,7 @@
       '(
 	("https://www.joelonsoftware.com/rss" software)
 	("http://feeds.feedburner.com/typepad/krisdedecker/lowtechmagazineenglish" tech)
+	("https://www.slowernews.com/rss.xml" news)
 	))
 
 
