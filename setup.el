@@ -151,6 +151,11 @@
 
 
 ;; --------------------------------------
+;; Restclient (https://github.com/pashky/restclient.el)
+(use-package restclient)
+
+
+;; --------------------------------------
 ;; Start emacs server deamon
 (server-start)
 

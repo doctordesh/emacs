@@ -80,7 +80,7 @@
 (when window-system (set-exec-path-from-shell-PATH))
 
 ;; Set my path as gopath
-;; (setenv "GOPATH" "/Users/emil/Development/go")
+(setenv "GOPATH" "/Users/emil/Development/go")
 
 ;; Gofmt before save
 (defun custom-go-mode-hook ()
@@ -90,7 +90,7 @@
   (local-set-key (kbd "C-.") 'godef-jump)
   (local-set-key (kbd "C-,") 'pop-tag-mark)
   )
-;; (add-hook 'go-mode-hook 'custom-go-mode-hook) ;; is this needed with lsp-mode?
+(add-hook 'go-mode-hook 'custom-go-mode-hook) ;; is this needed with lsp-mode?
 
 ;; --------------------------------------
 ;; Docker

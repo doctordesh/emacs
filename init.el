@@ -12,7 +12,7 @@
  '(org-hide-emphasis-markers t)
  '(org-refile-targets '(("~/.org/todo.org" :level . 0)))
  '(package-selected-packages
-   '(elfeed which-key rainbow-delimiters counsel ivy-rich neotree iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
+   '(restclient elfeed which-key rainbow-delimiters counsel ivy-rich neotree iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
  '(projectile-globally-ignored-directories
    '(".idea" ".vscode" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".ccls-cache" ".clangd" "__pycache__" "*__pycache__"))
  '(projectile-indexing-method 'hybrid)
@@ -38,7 +38,7 @@
 (load-file "~/.emacs.d/setup.el")
 
 ;; Load file extension modes
-(load-file "~/.emacs.d/file-modes.el")
+(load-file "~/.emacs.d/major-modes.el")
 
 ;; --------------------------------------------------
 ;; Setup done, prep for usage
