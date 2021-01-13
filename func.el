@@ -14,13 +14,15 @@
   (setq repo-url (format "git@gitlab.maxiv.lu.se:kits-maxiv/%s" repo))
   (setq download-dir (expand-file-name (format "~/Development/%s" repo)))
   (setq command (format "git clone %s %s" repo-url download-dir))
-  (setq buffer (generate-new-buffer (format "*clone %s*" repo-url)))
   (message "Repo: %s" repo-url)
   (message download-dir)
-  (switch-to-buffer buffer)
-  (start-process-shell-command "clone" buffer command)
+  (call-process "git" nil nil nil "clone" repo-url download-dir)
+  (projectile-add-known-project download-dir)
   (projectile-switch-project)
   )
+
+
+
 
 (defun er/day ()
   "Insert the daily template"
