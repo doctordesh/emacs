@@ -65,6 +65,9 @@
 ;; Don't ask yes or no, but y or n
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; When text is marked, it gets deleted when overwritten
+(delete-selection-mode 1)
+
 ;; --------------------------------------
 ;; Setup Ivy (auto-complete framework)
 (use-package ivy
