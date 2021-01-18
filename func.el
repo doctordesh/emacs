@@ -39,7 +39,7 @@
 	   "  - [ ] Check Calendar for any meetings\n"
 	   "  - [ ] Check 'todo' for good tasks\n"
 	   "  - [ ] Check sprint\n"
-	   "- [ ] Write down achievements of the day\n"
+	   "- [ ] Write down thoughts of the day\n"
            "*** Tasks [%]\n"
            "Add tasks here about what should be done today. Add links to todos etc\n"
            "- [ ] ...\n"
