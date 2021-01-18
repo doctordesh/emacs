@@ -32,6 +32,7 @@
 	   (format-time-string "%a, %Y-%m-%d: %H:")
 	   "\n"
 	   "*** Meta [0/3]\n"
+	   "- [ ] Read previous days thoughts\n"
 	   "- [ ] Read mail and create inbox items for each thing\n"
 	   "- [ ] Sort inbox items to either todo, someday or trash\n"
 	   "- [ ] Plan the day and add things to the 'Task' header\n"
