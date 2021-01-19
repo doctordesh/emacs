@@ -2,6 +2,11 @@
 ;; Custom functions
 ;; --------------------------------------------------
 
+(defun er/date ()
+  (interactive)
+  (insert (format-time-string "%Y-%m-%d"))
+  )
+
 (defun er/backup ()
   "Backup org and emacs files"
   (interactive)
@@ -22,8 +27,6 @@
   )
 
 
-
-
 (defun er/day ()
   "Insert the daily template"
   (interactive)
@@ -32,7 +35,7 @@
 	   (format-time-string "%a, %Y-%m-%d: %H:")
 	   "\n"
 	   "*** Meta [0/3]\n"
-	   "- [ ] Read previous days thoughts\n"
+	   "- [ ] Read previous days reflections\n"
 	   "- [ ] Read mail and create inbox items for each thing\n"
 	   "- [ ] Sort inbox items to either todo, someday or trash\n"
 	   "- [ ] Plan the day and add things to the 'Task' header\n"
@@ -45,7 +48,7 @@
            "Add tasks here about what should be done today. Add links to todos etc\n"
            "- [ ] ...\n"
            "**** Unplanned\n"
-           "*** Achievements\n"
+           "*** Reflections\n"
            "Add a comment at the end of the day about what was achieved, good and bad.\n"
            "Or insights, or thoughts, or something else\n"
 	   ))
