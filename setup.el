@@ -238,7 +238,7 @@
 (define-key global-map (kbd "C-S-b") 'projectile-switch-to-buffer)
 (define-key global-map (kbd "C-s") 'save-buffer)
 (define-key global-map (kbd "C-r") 'query-replace)
-(define-key global-map (kbd "C-R") 'query-replace-regexp)
+(define-key global-map (kbd "C-S-r") 'query-replace-regexp)
 (define-key global-map (kbd "C-x K") 'ibuffer)
 (define-key global-map (kbd "s-d") 'split-window-right)
 (define-key global-map (kbd "s-D") 'split-window-below)
@@ -247,7 +247,7 @@
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c L") 'org-insert-last-stored-link)
-(define-key global-map (kbd "C-q") 'other-frame)
+(define-key global-map (kbd "M-w") 'other-frame)
 
 (define-key global-map (kbd "s-P") 'projectile-switch-project)
 (define-key global-map (kbd "s-p") 'projectile-find-file)
