@@ -82,15 +82,20 @@
 ;; Set my path as gopath
 (setenv "GOPATH" "/Users/emil/Development/go")
 
+;; use goimports instead of gofmt
+(setq gofmt-command "goimports")
+
 ;; Gofmt before save
 (defun custom-go-mode-hook ()
-  ; Call Gofmt before saving
+  ;; Call Gofmt before saving
   (add-hook 'before-save-hook 'gofmt-before-save)
-  ; Godef jump key binding
+
+  ;; Godef jump key binding
   (local-set-key (kbd "C-.") 'godef-jump)
   (local-set-key (kbd "C-,") 'pop-tag-mark)
   )
-(add-hook 'go-mode-hook 'custom-go-mode-hook) ;; is this needed with lsp-mode?
+(remove-hook 'go-mode-hook 'custom-go-mode-hook)
+(add-hook 'go-mode-hook 'custom-go-mode-hook)
 
 ;; --------------------------------------
 ;; Docker
