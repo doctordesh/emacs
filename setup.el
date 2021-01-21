@@ -252,6 +252,11 @@
 (define-key global-map (kbd "s-P") 'projectile-switch-project)
 (define-key global-map (kbd "s-p") 'projectile-find-file)
 
+;; Keybindings for custom functions
+(global-set-key (kbd "C-S-d") 'er/duplicate-line)
+(global-set-key (kbd "C-S-j") 'er/move-line-down)
+(global-set-key (kbd "C-S-k") 'er/move-line-up)
+
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
 

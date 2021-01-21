@@ -54,8 +54,33 @@
 	   ))
   )
 
+;; Run ksync on all saves
 (defun er/ksync ()
   "Uses 'ksync' to sync to kitslab"
   (interactive)
   (start-process-shell-command "ksync" "*Messages*" "cd ~/Development && ksync")
   )
+
+(defun er/duplicate-line ()
+  (interactive)
+  (save-mark-and-excursion
+    (beginning-of-line)
+    (insert (thing-at-point 'line t))))
+
+(defun er/move-line-down ()
+  (interactive)
+  (let ((col (current-column)))
+    (save-excursion
+      (forward-line)
+      (transpose-lines 1))
+    (forward-line)
+    (move-to-column col)))
+
+(defun er/move-line-up ()
+  (interactive)
+  (let ((col (current-column)))
+    (save-excursion
+      (forward-line)
+      (transpose-lines -1))
+    (forward-line -1)
+    (move-to-column col)))
