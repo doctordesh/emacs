@@ -222,6 +222,15 @@
 
 
 ;; -------------------------------------
+;; multiple cursors
+
+(use-package multiple-cursors)
+(global-set-key (kbd "C-.") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(define-key mc/keymap (kbd "<return>") nil)
+
+;; -------------------------------------
 ;; Personal key bindings
 
 ;; Setup key binding for full screen
