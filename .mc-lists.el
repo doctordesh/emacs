@@ -5,9 +5,11 @@
       '(
 	keyboard-quit
 	ns-copy-including-secondary
+	org-self-insert-command
 	))
 
 (setq mc/cmds-to-run-once
       '(
 	org-capture
+	org-shifttab
 	))
