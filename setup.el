@@ -210,6 +210,14 @@
 
 
 ;; -------------------------------------
+;; yasnippet
+(use-package yasnippet)
+(setq yas-snippet-dirs '(
+			 "~/.emacs.d/snippets"
+			 ))
+(yas-global-mode 1)
+
+;; -------------------------------------
 ;; elfeed (RSS reader)
 
 (use-package elfeed)
