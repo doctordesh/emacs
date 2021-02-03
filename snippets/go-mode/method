@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: method
+# key: me
+# --
+// $2 ${5:...}
+func (self ${1:receiver}) ${2:name}(${3:args}) ${4:return} {
+     $0
+}
