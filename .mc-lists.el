@@ -3,10 +3,9 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-
+	markdown-outdent-or-delete
 	))
 
 (setq mc/cmds-to-run-once
       '(
-
 	))
