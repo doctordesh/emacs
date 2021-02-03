@@ -3,9 +3,14 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	indent-for-tab-command
 	markdown-outdent-or-delete
+	ns-copy-including-secondary
+	yaml-electric-dash-and-dot
 	))
 
 (setq mc/cmds-to-run-once
       '(
+	mark-whole-buffer
+	yaml-electric-backspace
 	))
