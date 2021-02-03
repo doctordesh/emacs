@@ -54,7 +54,6 @@
 	   ))
   )
 
-;; Run ksync on all saves
 (defun er/ksync ()
   "Uses 'ksync' to sync to kitslab"
   (interactive)
@@ -82,5 +81,5 @@
     (save-excursion
       (forward-line)
       (transpose-lines -1))
-    (forward-line -1)
+    (forward-line -2)
     (move-to-column col)))

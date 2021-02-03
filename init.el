@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(conda-anaconda-home "/Users/emil/Development/miniconda3")
  '(custom-safe-themes
-   '("bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "8b58ef2d23b6d164988a607ee153fd2fa35ee33efc394281b1028c2797ddeebb" default))
+   '("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "8b58ef2d23b6d164988a607ee153fd2fa35ee33efc394281b1028c2797ddeebb" default))
  '(display-time-24hr-format nil)
  '(display-time-default-load-average nil)
  '(line-spacing 0.35)
