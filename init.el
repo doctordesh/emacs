@@ -12,7 +12,7 @@
  '(org-hide-emphasis-markers t)
  '(org-refile-targets '(("~/.org/todo.org" :level . 0)))
  '(package-selected-packages
-   '(company yasnippet multiple-cursors restclient elfeed which-key rainbow-delimiters counsel ivy-rich neotree iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
+   '(lsp-ui company-lsp lsp-mode company yasnippet multiple-cursors restclient elfeed which-key rainbow-delimiters counsel ivy-rich neotree iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
  '(projectile-globally-ignored-directories
    '(".idea" ".vscode" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".ccls-cache" ".clangd" "__pycache__" "*__pycache__"))
  '(projectile-indexing-method 'hybrid)

@@ -213,7 +213,12 @@
 
 ;; ----------------------------------------
 ;; company (in-buffer completion)
-(use-package company)
+(use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 1)
+  )
 (add-hook 'after-init-hook 'global-company-mode)
 
 
@@ -273,6 +278,7 @@
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c L") 'org-insert-last-stored-link)
 (define-key global-map (kbd "M-w") 'other-frame)
+(define-key global-map (kbd "M-W") 'delete-frame)
 
 (define-key global-map (kbd "s-P") 'projectile-switch-project)
 (define-key global-map (kbd "s-p") 'projectile-find-file)
