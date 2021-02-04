@@ -211,8 +211,13 @@
 (global-set-key (kbd "C-c f y") 'er/open-someday)
 (global-set-key (kbd "C-c f s") 'er/open-setup)
 
+;; ----------------------------------------
+;; company (in-buffer completion)
+(use-package company)
+(add-hook 'after-init-hook 'global-company-mode)
 
-;; -------------------------------------
+
+;; ----------------------------------------
 ;; yasnippet
 (use-package yasnippet)
 (setq yas-snippet-dirs '(
@@ -220,7 +225,7 @@
 			 ))
 (yas-global-mode 1)
 
-;; -------------------------------------
+;; ----------------------------------------
 ;; elfeed (RSS reader)
 
 (use-package elfeed)
@@ -232,7 +237,7 @@
 	))
 
 
-;; -------------------------------------
+;; ----------------------------------------
 ;; multiple cursors
 
 (use-package multiple-cursors)
@@ -241,7 +246,7 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (define-key mc/keymap (kbd "<return>") nil)
 
-;; -------------------------------------
+;; ----------------------------------------
 ;; Personal key bindings
 
 ;; Setup key binding for full screen
@@ -280,6 +285,6 @@
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
 
-;; --------------------------------------
+;; -----------------------------------------
 ;; Setup ksync save hook
 (add-hook 'after-save-hook 'er/ksync)
