@@ -82,27 +82,27 @@
 ;; Set my path as gopath
 (setenv "GOPATH" "/Users/emil/Development/go")
 
-;; ;; use goimports instead of gofmt
-;; (setq gofmt-command "goimports")
+;; use goimports instead of gofmt
+(setq gofmt-command "goimports")
 
-;; ;; Gofmt before save
-;; (defun custom-go-mode-hook ()
-;;   ;; Call Gofmt before saving
-;;   (add-hook 'before-save-hook 'gofmt-before-save)
+;; Gofmt before save
+(defun custom-go-mode-hook ()
+  ;; Call Gofmt before saving
+  (add-hook 'before-save-hook 'gofmt-before-save)
 
-;;   ;; Godef jump key binding
-;;   (local-set-key (kbd "C-.") 'godef-jump)
-;;   (local-set-key (kbd "C-,") 'pop-tag-mark)
-;;   )
-;; (remove-hook 'go-mode-hook 'custom-go-mode-hook)
-;; (add-hook 'go-mode-hook 'custom-go-mode-hook)
+  ;; Godef jump key binding
+  (local-set-key (kbd "C-.") 'godef-jump)
+  (local-set-key (kbd "C-,") 'pop-tag-mark)
+  )
+(remove-hook 'go-mode-hook 'custom-go-mode-hook)
+(add-hook 'go-mode-hook 'custom-go-mode-hook)
 
 ;; ----------------------------------------
 ;; lsp-mode
 (use-package lsp-mode
   :ensure t
   :commands (lsp lsp-deferred)
-  :hook ((go-mode python-mode) . lsp-deferred))
+  :hook ((python-mode) . lsp-deferred))
 
 (use-package company-lsp
   :ensure t
