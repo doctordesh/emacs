@@ -12,5 +12,6 @@
 (setq mc/cmds-to-run-once
       '(
 	mark-whole-buffer
+	projectile-run-project
 	yaml-electric-backspace
 	))
