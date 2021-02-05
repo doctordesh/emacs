@@ -218,7 +218,7 @@
   :config
   (setq company-idle-delay 0)
   )
-(add-hook 'after-init-hook 'global-company-mode)
+(add-hook 'prog-mode-hook 'company-mode)
 
 
 ;; ----------------------------------------
