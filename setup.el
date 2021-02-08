@@ -275,7 +275,6 @@
 (define-key global-map (kbd "s-W") 'delete-other-windows)
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
-(define-key global-map (kbd "C-c L") 'org-insert-last-stored-link)
 (define-key global-map (kbd "M-w") 'other-frame)
 (define-key global-map (kbd "M-W") 'delete-frame)
 
