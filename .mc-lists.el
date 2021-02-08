@@ -6,6 +6,7 @@
 	indent-for-tab-command
 	markdown-outdent-or-delete
 	ns-copy-including-secondary
+	org-self-insert-command
 	yaml-electric-dash-and-dot
 	))
 
