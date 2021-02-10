@@ -285,6 +285,8 @@
 (global-set-key (kbd "C-S-d") 'er/duplicate-line)
 (global-set-key (kbd "C-S-j") 'er/move-line-down)
 (global-set-key (kbd "C-S-k") 'er/move-line-up)
+(global-set-key (kbd "<M-up>") 'er/upper)
+(global-set-key (kbd "<M-down>") 'er/downer)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)

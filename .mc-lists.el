@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	counsel-M-x
 	indent-for-tab-command
 	markdown-outdent-or-delete
 	ns-copy-including-secondary
