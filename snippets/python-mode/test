@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: test
+# key: test
+# --
+def test$1():
+    $0

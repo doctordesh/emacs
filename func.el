@@ -83,3 +83,10 @@
       (transpose-lines -1))
     (forward-line -2)
     (move-to-column col)))
+
+(defunc er/upper ()
+  (interactive)
+  (previous-line)
+  (previous-line)
+  (previous-line)
+  )
