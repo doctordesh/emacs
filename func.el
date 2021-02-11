@@ -51,6 +51,10 @@
            "*** Reflections\n"
            "Add a comment at the end of the day about what was achieved, good and bad.\n"
            "Or insights, or thoughts, or something else\n"
+	   "*** Focus scale [0%]\n"
+	   "- [ ] Wasted time on YouTube after lunch\n"
+	   "- [ ] Wasted time on Reddit\n"
+	   "- [ ] Wasted time on Facebook\n"
 	   ))
   )
 
