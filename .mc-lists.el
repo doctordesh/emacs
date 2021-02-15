@@ -8,6 +8,7 @@
 	markdown-outdent-or-delete
 	ns-copy-including-secondary
 	org-self-insert-command
+	undefined
 	yaml-electric-dash-and-dot
 	))
 
