@@ -92,11 +92,13 @@
     (move-to-column col)))
 
 (defun er/upper ()
+  "Move up 3 lines"
   (interactive)
   (previous-line 3)
   )
 
 (defun er/downer ()
+  "Move down 3 lines"
   (interactive)
   (next-line 3)
   )
