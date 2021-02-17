@@ -68,12 +68,14 @@
   )
 
 (defun er/duplicate-line ()
+  "Duplicates current line"
   (interactive)
   (save-mark-and-excursion
     (beginning-of-line)
     (insert (thing-at-point 'line t))))
 
 (defun er/move-line-down ()
+  "Move current line down"
   (interactive)
   (let ((col (current-column)))
     (save-excursion
@@ -83,6 +85,7 @@
     (move-to-column col)))
 
 (defun er/move-line-up ()
+  "Move current line up"
   (interactive)
   (let ((col (current-column)))
     (save-excursion
