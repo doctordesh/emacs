@@ -44,6 +44,9 @@
 (package-install 'spacemacs-theme)
 (load-theme 'spacemacs-dark)
 
+;; Set ~/Development as default directory
+(setq default-directory "~/Development/")
+
 ;; Show column position in file
 (column-number-mode 1)
 
