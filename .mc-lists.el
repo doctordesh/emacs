@@ -15,6 +15,7 @@
 (setq mc/cmds-to-run-once
       '(
 	mark-whole-buffer
+	mouse-set-region
 	projectile-run-project
 	yaml-electric-backspace
 	))
