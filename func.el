@@ -45,6 +45,7 @@
 	   "  - [ ] Check 'todo' for good tasks\n"
 	   "  - [ ] Check sprint\n"
 	   "**** Reflection and follow-up [/]\n"
+	   "- [ ] Fill in hours\n"
 	   "- [ ] Check of the Focus scale\n"
 	   "- [ ] Write down thoughts of the day\n"
            "*** Tasks [%]\n"
