@@ -5,6 +5,7 @@
       '(
 	counsel-M-x
 	indent-for-tab-command
+	kill-region
 	markdown-outdent-or-delete
 	ns-copy-including-secondary
 	org-self-insert-command
