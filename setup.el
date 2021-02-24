@@ -165,6 +165,11 @@
 
 
 ;; --------------------------------------
+;; JSON mode
+(use-package json-mode)
+
+
+;; --------------------------------------
 ;; Start emacs server deamon
 (server-start)
 
