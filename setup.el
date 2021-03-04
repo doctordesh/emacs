@@ -160,11 +160,6 @@
 
 
 ;; --------------------------------------
-;; Restclient (https://github.com/pashky/restclient.el)
-(use-package restclient)
-
-
-;; --------------------------------------
 ;; JSON mode
 (use-package json-mode)
 

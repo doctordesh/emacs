@@ -3,6 +3,10 @@
 ;; Adds a custom file extension
 (add-to-list 'auto-mode-alist '("\\.docker\\'" . dockerfile-mode))
 
+;; --------------------------------------
+;; Restclient (https://github.com/pashky/restclient.el)
+(use-package restclient)
+
 ;; ----------------------------------------
 ;; Org-mode
 
