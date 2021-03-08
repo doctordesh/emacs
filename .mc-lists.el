@@ -5,6 +5,7 @@
       '(
 	indent-for-tab-command
 	kill-region
+	markdown-cycle
 	markdown-outdent-or-delete
 	ns-copy-including-secondary
 	org-self-insert-command
