@@ -44,7 +44,7 @@
 ;; Setup done, prep for usage
 
 ;; Set emacs to full screen
-(toggle-frame-fullscreen)
+(toggle-frame-maximized)
 
 ;; Open the daily.org and todo.org file
 (find-file "~/.org/daily.org")

@@ -257,7 +257,7 @@
 ;; Personal key bindings
 
 ;; Setup key binding for full screen
-(define-key global-map (kbd "<s-return>") 'toggle-frame-fullscreen)
+(define-key global-map (kbd "<s-return>") 'toggle-frame-maximized)
 
 ;; Setup keybindings for home and end
 (define-key global-map [home] 'beginning-of-line)
@@ -279,7 +279,7 @@
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "M-w") 'other-frame)
-(define-key global-map (kbd "M-W") 'delete-frame)
+(define-key global-map (kbd "M-W") 'er/prev-frame)
 
 (define-key global-map (kbd "s-P") 'projectile-switch-project)
 (define-key global-map (kbd "s-p") 'projectile-find-file)

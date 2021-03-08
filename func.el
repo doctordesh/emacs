@@ -106,3 +106,9 @@
   (interactive)
   (next-line 3)
   )
+
+(defun er/prev-frame ()
+  "Previous frame"
+  (interactive)
+  (other-frame -1)
+  )
