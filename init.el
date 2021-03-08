@@ -48,5 +48,6 @@
 
 ;; Open the daily.org and todo.org file
 (find-file "~/.org/daily.org")
+(split-window-right)
 (find-file-other-window "~/.org/todo.org")
 (other-window 1) ; prev line focuses new buffer, so move back
