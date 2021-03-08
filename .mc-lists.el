@@ -18,5 +18,6 @@
 	mark-whole-buffer
 	mouse-set-region
 	projectile-run-project
+	swiper
 	yaml-electric-backspace
 	))
