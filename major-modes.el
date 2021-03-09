@@ -1,11 +1,9 @@
-;; ----------------------------------------
-;; Dockerfile mode
-;; Adds a custom file extension
-(add-to-list 'auto-mode-alist '("\\.docker\\'" . dockerfile-mode))
-
 ;; --------------------------------------
 ;; Restclient (https://github.com/pashky/restclient.el)
 (use-package restclient)
+
+;; Adds a custom file extension
+(add-to-list 'auto-mode-alist '("\\.rest\\'" . restclient-mode))
 
 ;; ----------------------------------------
 ;; Org-mode
@@ -127,6 +125,10 @@
 ;; --------------------------------------
 ;; Docker
 (use-package dockerfile-mode)
+
+;; Adds a custom file extension
+(add-to-list 'auto-mode-alist '("\\.docker\\'" . dockerfile-mode))
+
 
 ;; --------------------------------------
 ;; Markdown
