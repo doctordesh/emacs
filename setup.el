@@ -57,6 +57,9 @@
 ;; Line numbers in all prod-modes
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
+;; Highlight line in all prod-modes
+(add-hook 'prog-mode-hook 'hl-line-mode)
+
 ;; Delete trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -248,7 +251,7 @@
 ;; multiple cursors
 
 (use-package multiple-cursors)
-(global-set-key (kbd "C-.") 'mc/edit-lines)
+(global-set-key (kbd "C-:") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (define-key mc/keymap (kbd "<return>") nil)
