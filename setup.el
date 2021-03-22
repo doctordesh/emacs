@@ -297,6 +297,11 @@
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)
 
+;; ----------------------------------------
+(use-package tramp)
+(setq tramp-default-method "ssh")
+
+
 ;; -----------------------------------------
 ;; Setup ksync save hook
 (add-hook 'after-save-hook 'er/ksync)
