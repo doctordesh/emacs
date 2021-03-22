@@ -123,11 +123,18 @@
 
 
 ;; --------------------------------------
-;; Docker
+;; Dockerfile
 (use-package dockerfile-mode)
 
 ;; Adds a custom file extension
 (add-to-list 'auto-mode-alist '("\\.docker\\'" . dockerfile-mode))
+
+
+;; --------------------------------------
+;; Docker (not Dockerfile)
+(use-package docker
+  :ensure t
+  :bind ("C-c d" . docker))
 
 
 ;; --------------------------------------
