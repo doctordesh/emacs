@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: test
-# key: test
+# key: t
 # --
 func Test$1(t *testing.T) {
      $0

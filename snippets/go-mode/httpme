@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: HTTP method
+# key: httpme
+# --
+// $2 ${3:...}
+func (self ${1:receiver}) ${2:name}(writer http.ResponseWriter, request *http.Request) {
+     $0
+}
