@@ -26,6 +26,12 @@
   (projectile-switch-project)
   )
 
+(defun er/vterm (key)
+  "Open a new vterm with a name"
+  (interactive "sName: ")
+  (setq buffer-name (format "*vterm-%s*" key))
+  (vterm buffer-name)
+  )
 
 (defun er/day ()
   "Insert the daily template"
