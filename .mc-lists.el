@@ -15,6 +15,7 @@
 (setq mc/cmds-to-run-once
       '(
 	end-of-buffer
+	end-of-buffer-other-window
 	er/move-line-down
 	mark-whole-buffer
 	mouse-set-region
