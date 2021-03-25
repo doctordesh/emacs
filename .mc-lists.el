@@ -14,6 +14,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+	beginning-of-buffer-other-window
 	end-of-buffer
 	end-of-buffer-other-window
 	er/move-line-down
