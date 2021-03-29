@@ -1,6 +1,27 @@
-;; -*- emacs-lisp -*- <21/03/22 13:34:59 /Users/emil/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <21/03/29 23:13:11 /Users/emil/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; Run `M-x tramp-cleanup-all-connections' instead.
 
-(((tramp-file-name "ssh" "emiros" nil "w-v-kitslab-cc-0" nil nil nil)
-  nil))
+(((tramp-file-name "docker" nil nil "silly_sutherland" nil nil nil)
+  ("uname" "Linux 4.19.121-linuxkit")
+  ("locale" "LC_ALL=C")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin"))
+  ("pipe-buf" 4096)
+  ("remote-shell" "/bin/sh")
+  ("file-exists" "test -e")
+  ("case-insensitive" nil)
+  ("readlink" nil)
+  ("perl" nil)
+  ("stat" nil)
+  ("ls" "/bin/ls --color=never")
+  ("ls--quoting-style=literal --show-control-chars" nil)
+  ("ls-w" nil)
+  ("id" "/usr/bin/id")
+  ("gid-integer" 0)
+  ("gid-string" "root")
+  ("ls--dired" nil)
+  ("df-blocksize" 1024)
+  ("df" "\\df -k")
+  ("~" "/root")))

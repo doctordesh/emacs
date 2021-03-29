@@ -151,3 +151,19 @@
 
 ;; Set PYTHONPATH inside emacs
 (setenv "PYTHONPATH" (shell-command-to-string "echo $PYTHONPATH"))
+
+
+;; -------------------------------------
+;; VTerm
+(use-package vterm)
+(custom-set-faces
+ `(vterm-color-black   ((t (:foreground ,"#000000"))))
+ `(vterm-color-white   ((t (:foreground ,"#F0F0F0"))))
+ `(vterm-color-blue    ((t (:foreground ,"#6096D2"))))
+ `(vterm-color-cyan    ((t (:foreground ,"#2DACBA"))))
+ `(vterm-color-magenta ((t (:foreground ,"#C983BB"))))
+ `(vterm-color-green   ((t (:foreground ,"#2B896A"))))
+ `(vterm-color-red     ((t (:foreground ,"#C94D1C"))))
+ `(vterm-color-yellow  ((t (:foreground ,"#FBB13C"))))
+ `(vterm-color-yellow  ((t (:foreground ,"#F9A843"))))
+ )

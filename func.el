@@ -28,7 +28,7 @@
 
 (defun er/vterm (key)
   "Open a new vterm with a name"
-  (interactive "sName: ")
+  (interactive "sName: *vterm-")
   (setq buffer-name (format "*vterm-%s*" key))
   (vterm buffer-name)
   )
