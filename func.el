@@ -26,6 +26,17 @@
   (projectile-switch-project)
   )
 
+(defun er/proj (repo)
+  "Create new directory with git and add to projetile"
+  (interactive "sName: ")
+  (setq dir (format "~/Development/%s" repo))
+  (make-directory dir)
+  (message "Repo: %s" dir)
+  (shell-command (format "git init %s" dir))
+  (projectile-add-known-project dir)
+  (projectile-switch-project)
+  )
+
 (defun er/vterm (key)
   "Open a new vterm with a name"
   (interactive "sName: *vterm-")
