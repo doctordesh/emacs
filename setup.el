@@ -77,6 +77,9 @@
 ;; When text is marked, it gets deleted when overwritten
 (delete-selection-mode 1)
 
+;; Error when scroll hits top
+(setq scroll-error-top-bottom t)
+
 ;; --------------------------------------
 ;; Setup Ivy (auto-complete framework)
 (use-package ivy
@@ -154,6 +157,8 @@
     (setq projectile-project-search-path '("~/Development")))
   (setq projectile-switch-project-action 'projectile-dired)
   (setq projectile-indexing-method 'hybrid)
+  (setq projectile-globally-ignored-directories
+   '(".idea" ".vscode" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" ".ccls-cache" ".clangd" "__pycache__" "*__pycache__"))
   )
 
 
