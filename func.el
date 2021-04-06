@@ -77,6 +77,8 @@
            "Add a comment at the end of the day about what was achieved, good and bad.\n"
            "Or insights, or thoughts, or something else\n"
 	   ))
+  (previous-line 26)
+  (move-end-of-line 1)
   )
 
 (defun er/ksync ()
