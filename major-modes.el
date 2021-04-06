@@ -165,5 +165,4 @@
  `(vterm-color-green   ((t (:foreground ,"#2B896A"))))
  `(vterm-color-red     ((t (:foreground ,"#C94D1C"))))
  `(vterm-color-yellow  ((t (:foreground ,"#FBB13C"))))
- `(vterm-color-yellow  ((t (:foreground ,"#F9A843"))))
  )
