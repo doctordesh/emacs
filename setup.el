@@ -286,8 +286,9 @@
 (define-key global-map (kbd "s-W") 'delete-other-windows)
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
-(define-key global-map (kbd "M-w") 'other-frame)
-(define-key global-map (kbd "M-W") 'er/prev-frame)
+(define-key global-map (kbd "<f8>") 'other-frame)
+; (define-key global-map (kbd "C-c C-N") 'er/prev-frame)
+
 
 (define-key global-map (kbd "s-P") 'projectile-switch-project)
 (define-key global-map (kbd "s-p") 'projectile-find-file)
