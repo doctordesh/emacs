@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	dired-clean-directory
 	indent-for-tab-command
 	kill-region
 	markdown-cycle
@@ -15,6 +16,7 @@
 (setq mc/cmds-to-run-once
       '(
 	beginning-of-buffer-other-window
+	dired-mark
 	end-of-buffer
 	end-of-buffer-other-window
 	er/move-line-down
