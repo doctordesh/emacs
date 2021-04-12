@@ -15,14 +15,4 @@
 
 (setq mc/cmds-to-run-once
       '(
-	beginning-of-buffer-other-window
-	dired-mark
-	end-of-buffer
-	end-of-buffer-other-window
-	er/move-line-down
-	mark-whole-buffer
-	mouse-set-region
-	projectile-run-project
-	swiper
-	yaml-electric-backspace
 	))
