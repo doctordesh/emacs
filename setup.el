@@ -280,8 +280,6 @@
 (define-key global-map (kbd "C-r") 'query-replace)
 (define-key global-map (kbd "C-S-r") 'query-replace-regexp)
 (define-key global-map (kbd "C-x K") 'ibuffer)
-(define-key global-map (kbd "s-d") 'split-window-right)
-(define-key global-map (kbd "s-D") 'split-window-below)
 (define-key global-map (kbd "s-w") 'delete-window)
 (define-key global-map (kbd "s-W") 'delete-other-windows)
 (define-key global-map (kbd "C-d") 'dired-other-window)
@@ -300,6 +298,8 @@
 (global-set-key (kbd "<M-up>") 'er/upper)
 (global-set-key (kbd "<M-down>") 'er/downer)
 (global-set-key (kbd "C-c t") 'er/vterm)
+(global-set-key (kbd "s-d") 'er/split-window-right)
+(global-set-key (kbd "s-D") 'er/split-window-below)
 
 ;; Use cmd up-down-left-right to move between windows
 (windmove-default-keybindings 'super)

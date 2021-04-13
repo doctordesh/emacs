@@ -131,3 +131,20 @@
   (interactive)
   (other-frame -1)
   )
+
+
+(defun er/split-window-right ()
+  "Split and open file"
+  (interactive)
+  (split-window-right)
+  (other-window 1)
+  (projectile-find-file)
+  )
+
+(defun er/split-window-below ()
+  "Split and open file"
+  (interactive)
+  (split-window-below)
+  (other-window 1)
+  (projectile-find-file)
+  )
