@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	c-electric-slash
 	dired-clean-directory
 	indent-for-tab-command
 	kill-region
@@ -15,4 +16,5 @@
 
 (setq mc/cmds-to-run-once
       '(
+	counsel-find-file
 	))
