@@ -132,8 +132,23 @@
   (other-frame -1)
   )
 
+;; --------------------------------------------------
+;; Split window functions
+;; Four flavours
+;; 1. Split and then open file (f)
+;; 2. Split and then open vterm (t)
+;; 3. Split and then open buffer (b)
+;; 4. Split and then do nothing (d)
+;; --------------------------------------------------
 
 (defun er/split-window-right ()
+  "Split window to the right and move to new window"
+  (interactive)
+  (split-window-right)
+  (other-window 1)
+  )
+
+(defun er/file-split-window-right ()
   "Split and open file"
   (interactive)
   (split-window-right)
@@ -141,10 +156,49 @@
   (projectile-find-file)
   )
 
+(defun er/vterm-split-window-right ()
+  "Split and open vterm"
+  (interactive)
+  (split-window-right)
+  (other-window 1)
+  (er/vterm "cli")
+  )
+
+(defun er/buffer-split-window-right ()
+  "Split and open buffer"
+  (interactive)
+  (split-window-right)
+  (other-window 1)
+  (ivy-switch-buffer)
+  )
+
 (defun er/split-window-below ()
+  "Split window below and move to new window"
+  (interactive)
+  (split-window-below)
+  (other-window 1)
+  )
+
+(defun er/file-split-window-below ()
   "Split and open file"
   (interactive)
   (split-window-below)
   (other-window 1)
   (projectile-find-file)
+  )
+
+(defun er/vterm-split-window-below ()
+  "Split and open vterm"
+  (interactive)
+  (split-window-below)
+  (other-window 1)
+  (er/vterm "cli")
+  )
+
+(defun er/buffer-split-window-below ()
+  "Split and open buffer"
+  (interactive)
+  (split-window-below)
+  (other-window 1)
+  (ivy-switch-buffer)
   )

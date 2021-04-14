@@ -284,12 +284,15 @@
 (define-key global-map (kbd "s-W") 'delete-other-windows)
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
-(define-key global-map (kbd "<f8>") 'other-frame)
+(define-key global-map (kbd "s-1") 'other-frame)
 ; (define-key global-map (kbd "C-c C-N") 'er/prev-frame)
 
 
 (define-key global-map (kbd "s-P") 'projectile-switch-project)
 (define-key global-map (kbd "s-p") 'projectile-find-file)
+
+;; Use cmd up-down-left-right to move between windows
+(windmove-default-keybindings 'super)
 
 ;; Keybindings for custom functions
 (global-set-key (kbd "C-S-d") 'er/duplicate-line)
@@ -298,11 +301,19 @@
 (global-set-key (kbd "<M-up>") 'er/upper)
 (global-set-key (kbd "<M-down>") 'er/downer)
 (global-set-key (kbd "C-c t") 'er/vterm)
-(global-set-key (kbd "s-d") 'er/split-window-right)
-(global-set-key (kbd "s-D") 'er/split-window-below)
 
-;; Use cmd up-down-left-right to move between windows
-(windmove-default-keybindings 'super)
+;; Split window into different 'types' of buffers
+(global-unset-key (kbd "s-d")) ; remove otherwise can't use as leader key
+(global-set-key (kbd "s-d d") 'er/split-window-right)
+(global-set-key (kbd "s-d f") 'er/file-split-window-right)
+(global-set-key (kbd "s-d t") 'er/vterm-split-window-right)
+(global-set-key (kbd "s-d b") 'er/buffer-split-window-right)
+
+(global-unset-key (kbd "s-D")) ; remove otherwise can't use as leader key
+(global-set-key (kbd "s-D d") 'er/split-window-below)
+(global-set-key (kbd "s-D f") 'er/file-split-window-below)
+(global-set-key (kbd "s-D t") 'er/vterm-split-window-below)
+(global-set-key (kbd "s-D b") 'er/buffer-split-window-below)
 
 ;; ----------------------------------------
 (use-package tramp)
