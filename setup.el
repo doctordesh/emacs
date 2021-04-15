@@ -315,6 +315,9 @@
 (global-set-key (kbd "s-D t") 'er/vterm-split-window-below)
 (global-set-key (kbd "s-D b") 'er/buffer-split-window-below)
 
+;; New frame
+(global-set-key (kbd "s-n") 'er/make-frame)
+
 ;; ----------------------------------------
 (use-package tramp)
 (setq tramp-default-method "ssh")

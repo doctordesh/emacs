@@ -202,3 +202,14 @@
   (other-window 1)
   (ivy-switch-buffer)
   )
+
+;; --------------------------------------------------
+;; Frame
+;; --------------------------------------------------
+
+(defun er/make-frame ()
+  "New frame"
+  (interactive)
+  (make-frame)
+  (toggle-frame-maximized)
+  )
