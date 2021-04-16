@@ -80,6 +80,9 @@
 ;; Error when scroll hits top
 (setq scroll-error-top-bottom t)
 
+;; Line length before break for fill-paragraph
+(setq-default fill-column 80)
+
 ;; --------------------------------------
 ;; Setup Ivy (auto-complete framework)
 (use-package ivy
