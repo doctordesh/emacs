@@ -80,8 +80,13 @@
 ;; Error when scroll hits top
 (setq scroll-error-top-bottom t)
 
-;; Line length before break for fill-paragraph
+;; Line length before break for fill-paragraph (M-q)
 (setq-default fill-column 80)
+
+;; --------------------------------------
+;; Start emacs server deamon
+(server-start)
+
 
 ;; --------------------------------------
 ;; Setup Ivy (auto-complete framework)
@@ -176,11 +181,6 @@
 
 
 ;; --------------------------------------
-;; Start emacs server deamon
-(server-start)
-
-
-;; --------------------------------------
 ;; Bind keys to files for easy access
 (defun er/open-inbox ()
     "Open inbox"
@@ -226,6 +226,17 @@
 (global-set-key (kbd "C-c f s") 'er/open-setup)
 
 ;; ----------------------------------------
+;; dired
+(use-package dired
+  :ensure nil
+  :config
+  (when (string= system-type "darwin")
+    (setq dired-use-ls-dired t
+          insert-directory-program "/usr/local/bin/gls"))
+  :custom
+  (dired-listing-switches "-aBhgo --group-directories-first"))
+
+;; ----------------------------------------
 ;; company (in-buffer completion)
 (use-package company
   :ensure t
@@ -257,7 +268,6 @@
 
 ;; ----------------------------------------
 ;; multiple cursors
-
 (use-package multiple-cursors)
 (global-set-key (kbd "C-:") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
