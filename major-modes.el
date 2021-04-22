@@ -100,26 +100,26 @@
 (add-hook 'go-mode-hook 'custom-go-mode-hook)
 
 ;; ----------------------------------------
-;; lsp-mode
-(use-package lsp-mode
-  :ensure t
-  :commands (lsp lsp-deferred)
-  :hook ((python-mode) . lsp-deferred))
+;; ;; lsp-mode
+;; (use-package lsp-mode
+;;   :ensure t
+;;   :commands (lsp lsp-deferred)
+;;   :hook ((python-mode) . lsp-deferred))
 
-(use-package company-lsp
-  :ensure t
-  :commands company-lsp)
+;; (use-package company-lsp
+;;   :ensure t
+;;   :commands company-lsp)
 
-(use-package lsp-ui
-  :ensure t
-  :commands lsp-ui-mode
-  :init
-)
+;; (use-package lsp-ui
+;;   :ensure t
+;;   :commands lsp-ui-mode
+;;   :init
+;; )
 
-(defun lsp-go-install-save-hooks ()
-  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-  (add-hook 'before-save-hook #'lsp-organize-imports t t))
-(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
+;; (defun lsp-go-install-save-hooks ()
+;;   (add-hook 'before-save-hook #'lsp-format-buffer t t)
+;;   (add-hook 'before-save-hook #'lsp-organize-imports t t))
+;; (add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
 
 
 ;; --------------------------------------
