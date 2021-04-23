@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <21/03/29 23:13:11 /Users/emil/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <21/04/23 14:15:13 /Users/emil/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; Run `M-x tramp-cleanup-all-connections' instead.
 
@@ -24,4 +24,25 @@
   ("ls--dired" nil)
   ("df-blocksize" 1024)
   ("df" "\\df -k")
-  ("~" "/root")))
+  ("~" "/root"))
+ ((tramp-file-name "docker" nil nil "admiring_grothendieck" nil nil nil)
+  ("~" "/root")
+  ("uname" "Linux 4.19.121-linuxkit")
+  ("locale" "LC_ALL=C.UTF-8")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("pipe-buf" 4096)
+  ("remote-shell" "/bin/sh")
+  ("stat" "env QUOTING_STYLE=locale \\stat")
+  ("file-exists" "test -e")
+  ("id" "/usr/bin/id")
+  ("gid-string" "root")
+  ("readlink" "\\readlink")
+  ("tmpdir" "/docker:admiring_grothendieck:/tmp")
+  ("uid-integer" 0)
+  ("gid-integer" 0)
+  ("case-insensitive" nil)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")))
