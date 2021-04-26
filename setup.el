@@ -91,11 +91,9 @@
 ;; ----------------------------------------
 ;; Window placement
 
-(use-package internal)
-
-;; (use-package window)
-;;   :custom
-;;   (display-buffer-alist))
+(use-package window
+  :ensure nil
+)
 
 
 ;; ----------------------------------------
