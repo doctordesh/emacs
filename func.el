@@ -85,6 +85,7 @@
   "Uses 'ksync' to sync to kitslab"
   (interactive)
   (start-process-shell-command "ksync" "*Messages*" "cd ~/Development && ksync")
+  (message "ksynced")
   )
 
 (defun er/duplicate-line ()

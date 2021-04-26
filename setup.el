@@ -83,12 +83,22 @@
 ;; Line length before break for fill-paragraph (M-q)
 (setq-default fill-column 80)
 
-;; --------------------------------------
+;; ----------------------------------------
 ;; Start emacs server deamon
 (server-start)
 
 
-;; --------------------------------------
+;; ----------------------------------------
+;; Window placement
+
+(use-package internal)
+
+;; (use-package window)
+;;   :custom
+;;   (display-buffer-alist))
+
+
+;; ----------------------------------------
 ;; Setup Ivy (auto-complete framework)
 (use-package ivy
   :diminish
@@ -96,7 +106,7 @@
   :config
   (ivy-mode 1))
 
-;; --------------------------------------
+;; ----------------------------------------
 ;; Setup Counsel (Ivy-enhanced versions
 ;; of common Emacs commands)
 (use-package counsel
@@ -105,7 +115,7 @@
   (counsel-mode 1))
 
 
-;; -------------------------------------
+;; ---------------------------------------
 ;; ivy-rich supplies more information in ivy listings
 (use-package ivy-rich
   :init
