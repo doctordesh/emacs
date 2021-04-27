@@ -91,9 +91,21 @@
 ;; ----------------------------------------
 ;; Window placement
 
-(use-package window
-  :ensure nil
-)
+(use-package emacs
+  :custom
+  (display-buffer-alist))
+;;    '(
+;;      ("\\*compilation\\*"
+;;       (display-buffer-in-side-window)
+;;       (window-height . 0.25)
+;;       (side . bottom)
+;;       (slot . 1)
+;;       "\\*vterm\\*"
+;;       (display-buffer-in-side-window)
+;;       (window-height . 0.25)
+;;       (side . bottom)
+;;       (slot . -1)
+;;    ))))
 
 
 ;; ----------------------------------------
