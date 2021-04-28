@@ -63,21 +63,18 @@
 	   "  - [ ] Check sprint\n"
 	   "**** Reflection and follow-up [/]\n"
 	   "- [ ] Fill in hours\n"
-	   "- [ ] Check of the Focus scale\n"
 	   "- [ ] Write down thoughts of the day\n"
            "*** Tasks [%]\n"
            "Add tasks here about what should be done today. Add links to todos etc\n"
            "- [ ] ...\n"
            "**** Unplanned\n"
-	   "*** Focus scale [0%]\n"
-	   "- [ ] No wasted time on YouTube\n"
-	   "- [ ] No wasted time on Reddit\n"
-	   "- [ ] No wasted time on Facebook\n"
            "*** Reflections\n"
            "Add a comment at the end of the day about what was achieved, good and bad.\n"
            "Or insights, or thoughts, or something else\n"
+	   "**** Focus\n"
+	   "**** Thoughts\n"
 	   ))
-  (previous-line 26)
+  (previous-line 23)
   (move-end-of-line 1)
   )
 
