@@ -12,6 +12,7 @@
 	ns-copy-including-secondary
 	org-self-insert-command
 	yaml-electric-dash-and-dot
+	yas-expand
 	))
 
 (setq mc/cmds-to-run-once
