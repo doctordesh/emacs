@@ -49,8 +49,12 @@
   (interactive)
   (insert (concat
 	   "** "
-	   (format-time-string "%a, %Y-%m-%d: %H:")
+	   (format-time-string "%a, %Y-%m-%d")
 	   "\n"
+	   ":WORKHOURS:\n"
+	   (format-time-string "%H:")
+	   "\n"
+	   ":END:\n"
 	   "*** Meta\n"
 	   "**** Prepare the day [/]\n"
 	   "- [ ] Read previous days reflections\n"
@@ -74,7 +78,7 @@
 	   "**** Focus\n"
 	   "**** Thoughts\n"
 	   ))
-  (previous-line 23)
+  (previous-line 24)
   (move-end-of-line 1)
   )
 
