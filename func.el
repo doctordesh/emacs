@@ -140,7 +140,7 @@
 ;; 1. Split and then open file (f)
 ;; 2. Split and then open vterm (t)
 ;; 3. Split and then open buffer (b)
-;; 4. Split and then do nothing (d)
+;; 4. Split and then do 'default' (d)
 ;; --------------------------------------------------
 
 (defun er/split-window-right ()
@@ -160,7 +160,8 @@
 
 (defun er/vterm-split-window-right (key)
   "Split and open vterm"
-  (interactive "sName: *vterm-")
+  (interactive "sName: *vterm-[cli]")
+  (if (equal "" key) (setq key "cli"))
   (split-window-right)
   (other-window 1)
   (er/vterm key)
@@ -191,7 +192,8 @@
 
 (defun er/vterm-split-window-below (key)
   "Split and open vterm"
-  (interactive "sName: *vterm-")
+  (interactive "sName: *vterm-[cli]")
+  (if (equal "" key) (setq key "cli"))
   (split-window-below)
   (other-window 1)
   (er/vterm key)
@@ -214,11 +216,4 @@
   (interactive)
   (make-frame)
   (toggle-frame-maximized)
-  )
-
-(defun er/test (&optional key)
-  "Testing func"
-  (interactive "sName: *vterm-[cli]")
-  (unless key (setq key "cli"))
-  (message (format "--%s--" key))
   )
