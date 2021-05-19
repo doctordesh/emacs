@@ -39,7 +39,8 @@
 
 (defun er/vterm (key)
   "Open a new vterm with a name"
-  (interactive "sName: *vterm-")
+  (interactive "sName: *vterm-[cli]")
+  (if (equal "" key) (setq key "cli"))
   (setq buffer-name (format "*vterm-%s*" key))
   (vterm buffer-name)
   )
