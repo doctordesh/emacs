@@ -158,12 +158,12 @@
   (projectile-find-file)
   )
 
-(defun er/vterm-split-window-right ()
+(defun er/vterm-split-window-right (key)
   "Split and open vterm"
-  (interactive)
+  (interactive "sName: *vterm-")
   (split-window-right)
   (other-window 1)
-  (er/vterm "cli")
+  (er/vterm key)
   )
 
 (defun er/buffer-split-window-right ()
@@ -189,12 +189,12 @@
   (projectile-find-file)
   )
 
-(defun er/vterm-split-window-below ()
+(defun er/vterm-split-window-below (key)
   "Split and open vterm"
-  (interactive)
+  (interactive "sName: *vterm-")
   (split-window-below)
   (other-window 1)
-  (er/vterm "cli")
+  (er/vterm key)
   )
 
 (defun er/buffer-split-window-below ()
@@ -214,4 +214,11 @@
   (interactive)
   (make-frame)
   (toggle-frame-maximized)
+  )
+
+(defun er/test (&optional key)
+  "Testing func"
+  (interactive "sName: *vterm-[cli]")
+  (unless key (setq key "cli"))
+  (message (format "--%s--" key))
   )
