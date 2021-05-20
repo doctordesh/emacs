@@ -6,6 +6,7 @@
  '(conda-anaconda-home "/Users/emil/Development/miniconda3")
  '(custom-safe-themes
    '("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "8b58ef2d23b6d164988a607ee153fd2fa35ee33efc394281b1028c2797ddeebb" default))
+ '(org-export-backends '(ascii html icalendar latex md odt))
  '(package-selected-packages
    '(internal window\.el window-system window docker vterm json-mode lsp-ui company-lsp lsp-mode company yasnippet multiple-cursors restclient elfeed which-key rainbow-delimiters counsel ivy-rich neotree iedit dockerfile-mode magit conda projectile exec-path-from-shell spacemacs-theme markdown-mode go-mode yaml-mode doom-modeline use-package ivy))
  '(spacemacs-theme-custom-colors nil))
