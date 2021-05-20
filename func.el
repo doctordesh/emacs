@@ -39,7 +39,7 @@
 
 (defun er/vterm (key)
   "Open a new vterm with a name"
-  (interactive "sName: *vterm-[cli]")
+  (interactive "sName: *vterm-[cli] ")
   (if (equal "" key) (setq key "cli"))
   (setq buffer-name (format "*vterm-%s*" key))
   (vterm buffer-name)
@@ -161,7 +161,7 @@
 
 (defun er/vterm-split-window-right (key)
   "Split and open vterm"
-  (interactive "sName: *vterm-[cli]")
+  (interactive "sName: *vterm-[cli] ")
   (if (equal "" key) (setq key "cli"))
   (split-window-right)
   (other-window 1)
@@ -193,7 +193,7 @@
 
 (defun er/vterm-split-window-below (key)
   "Split and open vterm"
-  (interactive "sName: *vterm-[cli]")
+  (interactive "sName: *vterm-[cli] ")
   (if (equal "" key) (setq key "cli"))
   (split-window-below)
   (other-window 1)
