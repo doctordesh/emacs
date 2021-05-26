@@ -100,6 +100,14 @@
 			   (window-height . 0.25)
 			   (side . bottom)
 			   (slot . 0)
+			   )
+
+			  (
+			   "\\*vterm-cli\\*"
+			   (display-buffer-in-side-window)
+			   (window-height . 0.25)
+			   (side . bottom)
+			   (slot . 1)
 			  )
 			  )))
 ;;    '(
