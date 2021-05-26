@@ -176,6 +176,16 @@
   (ivy-switch-buffer)
   )
 
+;; ----------------------------------------
+
+(defun er/project-split-window-right ()
+  "Split and open buffer"
+  (interactive)
+  (split-window-right)
+  (other-window 1)
+  (projectile-switch-project)
+  )
+
 (defun er/split-window-below ()
   "Split window below and move to new window"
   (interactive)
@@ -206,6 +216,14 @@
   (split-window-below)
   (other-window 1)
   (ivy-switch-buffer)
+  )
+
+(defun er/project-split-window-below ()
+  "Split and open buffer"
+  (interactive)
+  (split-window-below)
+  (other-window 1)
+  (projectile-switch-project)
   )
 
 ;; --------------------------------------------------

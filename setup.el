@@ -93,7 +93,15 @@
 
 (use-package emacs
   :custom
-  (display-buffer-alist))
+  (display-buffer-alist '(
+			  (
+			   "\\*Help\\*"
+			   (display-buffer-in-side-window)
+			   (window-height . 0.25)
+			   (side . bottom)
+			   (slot . 0)
+			  )
+			  )))
 ;;    '(
 ;;      ("\\*compilation\\*"
 ;;       (display-buffer-in-side-window)
@@ -106,7 +114,6 @@
 ;;       (side . bottom)
 ;;       (slot . -1)
 ;;    ))))
-
 
 ;; ----------------------------------------
 ;; Setup Ivy (auto-complete framework)
@@ -341,12 +348,14 @@
 (global-set-key (kbd "s-d f") 'er/file-split-window-right)
 (global-set-key (kbd "s-d t") 'er/vterm-split-window-right)
 (global-set-key (kbd "s-d b") 'er/buffer-split-window-right)
+(global-set-key (kbd "s-d p") 'er/project-split-window-right)
 
 (global-unset-key (kbd "s-D")) ; remove otherwise can't use as leader key
 (global-set-key (kbd "s-D d") 'er/split-window-below)
 (global-set-key (kbd "s-D f") 'er/file-split-window-below)
 (global-set-key (kbd "s-D t") 'er/vterm-split-window-below)
 (global-set-key (kbd "s-D b") 'er/buffer-split-window-below)
+(global-set-key (kbd "s-D p") 'er/project-split-window-below)
 
 ;; New frame
 (global-set-key (kbd "s-n") 'er/make-frame)
