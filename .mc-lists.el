@@ -12,6 +12,7 @@
 	markdown-outdent-or-delete
 	ns-copy-including-secondary
 	org-self-insert-command
+	yaml-electric-backspace
 	yaml-electric-dash-and-dot
 	yas-expand
 	))
