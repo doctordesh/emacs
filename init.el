@@ -37,16 +37,3 @@
 (split-window-right)
 (find-file-other-window "~/.org/todo.org")
 (other-window 1) ; prev line focuses new buffer, so move back
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(vterm-color-black ((t (:foreground "#000000"))))
- '(vterm-color-blue ((t (:foreground "#6096D2"))))
- '(vterm-color-cyan ((t (:foreground "#2DACBA"))))
- '(vterm-color-green ((t (:foreground "#2B896A"))))
- '(vterm-color-magenta ((t (:foreground "#C983BB"))))
- '(vterm-color-red ((t (:foreground "#C94D1C"))))
- '(vterm-color-white ((t (:foreground "#F0F0F0"))))
- '(vterm-color-yellow ((t (:foreground "#FBB13C")))))
