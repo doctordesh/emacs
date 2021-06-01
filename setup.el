@@ -326,8 +326,12 @@
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "s-1") 'other-frame)
-; (define-key global-map (kbd "C-c C-N") 'er/prev-frame)
+;; (define-key global-map (kbd "C-c C-N") 'er/prev-frame)
 
+(define-key global-map (kbd "<C-s-left>") 'shrink-window-horizontally)
+(define-key global-map (kbd "<C-s-right>") 'enlarge-window-horizontally)
+(define-key global-map (kbd "<C-s-down>") 'shrink-window)
+(define-key global-map (kbd "<C-s-up>") 'enlarge-window)
 
 (define-key global-map (kbd "s-P") 'projectile-switch-project)
 (define-key global-map (kbd "s-p") 'projectile-find-file)
