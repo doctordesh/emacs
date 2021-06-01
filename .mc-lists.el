@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	c-electric-semi&comma
 	c-electric-slash
 	dired-clean-directory
 	indent-for-tab-command
