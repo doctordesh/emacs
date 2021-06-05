@@ -20,7 +20,6 @@
 
 (setq mc/cmds-to-run-once
       '(
-	c-electric-paren
 	counsel-M-x
 	counsel-find-file
 	end-of-buffer-other-window
