@@ -19,6 +19,9 @@
 ;; Indents contents below a header to match header level
 (add-hook 'org-mode-hook (lambda () (org-indent-mode 1)))
 
+;; Images respect the attribute about width
+(setq org-image-actual-width nil)
+
 ;; Hides the **, //, __ when doing bold, italic
 ;; and underscore emphaisis
 (setq org-hide-emphasis-markers 1)
