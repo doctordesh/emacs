@@ -370,6 +370,12 @@
 (setq tramp-default-method "ssh")
 
 
-;; -----------------------------------------
+;; ----------------------------------------
+;; Ripgrep
+(use-package ripgrep)
+(use-package projectile-ripgrep)
+
+
+;; ----------------------------------------
 ;; Setup ksync save hook
 (add-hook 'after-save-hook 'er/ksync)
