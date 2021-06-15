@@ -34,9 +34,22 @@
 
 ;; Open the daily.org and todo.org file
 (find-file "~/.org/daily.org")
+(emacs-lock-mode)
+
 (split-window-right)
-(find-file-other-window "~/.org/todo.org")
+(other-window 1)
+(find-file "~/.org/todo.org")
+(emacs-lock-mode)
+
+(split-window-below)
+(other-window 1)
+(vterm)
+(rename-buffer "*cli*")
+(emacs-lock-mode)
+
 (other-window 1) ; prev line focuses new buffer, so move back
+;; --------------------------------------------------
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
