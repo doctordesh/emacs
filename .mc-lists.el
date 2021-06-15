@@ -12,6 +12,7 @@
 	markdown-enter-key
 	markdown-outdent-or-delete
 	ns-copy-including-secondary
+	org-force-self-insert
 	org-self-insert-command
 	yaml-electric-backspace
 	yaml-electric-dash-and-dot
