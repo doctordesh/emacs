@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	beginning-of-buffer-other-window
 	c-electric-semi&comma
 	c-electric-slash
 	dired-clean-directory
