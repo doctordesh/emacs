@@ -326,7 +326,7 @@
 (define-key global-map (kbd "C-d") 'dired-other-window)
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "s-1") 'other-frame)
-;; (define-key global-map (kbd "C-c C-N") 'er/prev-frame)
+(define-key global-map (kbd "s-!") 'er/prev-frame)
 
 (define-key global-map (kbd "<C-s-left>") 'shrink-window-horizontally)
 (define-key global-map (kbd "<C-s-right>") 'enlarge-window-horizontally)
