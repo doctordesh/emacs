@@ -11,6 +11,7 @@
 ;; Create links by id instead of 'file'. Makes destionation headings portable
 ;; and they can be changed and refiled.
 (setq org-id-link-to-org-use-id t)
+(org-id-store-link)
 
 ;; Nice looking bullets
 (require 'org-bullets)
