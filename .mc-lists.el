@@ -8,6 +8,7 @@
 	c-electric-slash
 	dired-clean-directory
 	indent-for-tab-command
+	keyboard-quit
 	kill-region
 	markdown-cycle
 	markdown-enter-key
