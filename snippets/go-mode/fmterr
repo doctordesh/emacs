@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: fmterr
+# key: fmr
+# --
+fmt.Errorf("$1: %w", $2err)
