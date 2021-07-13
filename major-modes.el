@@ -34,6 +34,8 @@
       '(
 	("t" "Todo" entry (file "~/.org/inbox.org")
          "* TODO %?\n:LOGBOOK:\n- Added at %U\n:END: ")
+	("l" "Code" entry (file "~/.org/inbox.org")
+         "* TODO %?\n:LOGBOOK:\n- Added at %U\n:END: \n%l")
 	("T" "Task" entry (file "~/.org/inbox.org")
 	 "* TODO %?\nhttps://agile.maxiv.lu.se/project/vinhar-max-iv-machine-cs/us/%^{TaskID}\n:LOGBOOK:\n- Added at %U\n:END:")
 	))
