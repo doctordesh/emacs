@@ -27,4 +27,5 @@
 	counsel-M-x
 	counsel-find-file
 	end-of-buffer-other-window
+	swiper
 	))
