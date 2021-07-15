@@ -34,18 +34,18 @@
 
 ;; Open the daily.org and todo.org file
 (find-file "~/.org/daily.org")
-(emacs-lock-mode)
+;(emacs-lock-mode)
 
 (split-window-right)
 (other-window 1)
 (find-file "~/.org/todo.org")
-(emacs-lock-mode)
+;(emacs-lock-mode)
 
 (split-window-below)
 (other-window 1)
 (vterm)
 (rename-buffer "*cli*")
-(emacs-lock-mode)
+;(emacs-lock-mode)
 
 (other-window 1) ; prev line focuses new buffer, so move back
 ;; --------------------------------------------------
